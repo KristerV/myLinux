@@ -1,0 +1,17 @@
+[
+
+    { "keys": ["ctrl+7"], "command": "toggle_comment", "args": { "block": false } },
+    { "keys": ["ctrl+shift+7"], "command": "toggle_comment", "args": { "block": true } },
+
+    { "keys": ["ctrl+shift+,"], "command": "unfold" },
+    { "keys": ["ctrl+shift+."], "command": "fold" },
+
+    { "keys": ["ctrl+shift+a"], "command": "alignment" },
+    { "keys": ["ctrl+,"], "command": "run_macro_file", "args": {"file": "Packages/User/semicolon.sublime-macro"}},
+    { "keys": ["ctrl+shift+alt+,"], "command": "run_macro_file", "args": {"file": "Packages/User/unfoldfunction.sublime-macro"}},
+
+    { "keys": ["alt+q"], "command": "toggle_setting", "args": {"setting": "word_wrap"}},
+    { "keys": ["ctrl+alt+shift+i"], "command": "increment_selection" },
+    { "keys": ["ctrl+alt+shift+m"], "command": "expand_region" },
+    // { "keys": ["ctrl+alt+shift+m"], "command": "expand_selection", "args": {"to": "scope"} },
+]

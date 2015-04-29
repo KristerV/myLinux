@@ -1,0 +1,124 @@
+#!/bin/bash
+dir=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
+backup_dir="$HOME/backups"
+
+getService () {
+    case $1 in
+        ti ) service="ting"            ; server="meteor" ;;
+        gh ) service="ghost"           ; server="ghost"  ;;
+        todev ) service="toitladev"    ; server="toitla" ;;
+        tolive ) service="toitlalive"  ; server="toitla" ;;
+        kr ) service="krister"         ; server="meteor" ;;
+        mo ) service="movieatmyplace"  ; server="meteor" ;;
+        ko ) service="koodikool"       ; server="meteor" ;;
+        po ) service="poll"            ; server="meteor" ;;
+        lu ) service="LunarDevs"       ; server="meteor" ;;
+        tick ) service="tickets"       ; server="meteor" ;;
+        java ) service="javaCheatsheet" ;;
+    esac
+
+    getIP $server
+}
+
+getIP () {
+    case $1 in
+        meteor ) ip="95.85.56.82" ;;
+        toitla ) ip="178.62.237.194" ;;
+        ghost  ) ip="188.226.162.53" ;;
+    esac
+}
+
+c () {
+    getService $1
+    cd ~/code/$service
+    clear
+    pwd
+    git status
+    if [[ $? -ne 0 ]]; then
+        clone
+    fi
+}
+
+clone () {
+    echo "=== CLONING $service ==="
+    case $service in
+        ting ) cd $HOME/code && git clone git@github.com:KristerV/ting.git;;
+        ghost ) echo "Can't clone Ghost, stupid!" ;;
+        toitladev | toitlalive ) cd $HOME/code && git clone ;;
+        krister ) cd $HOME/code && git clone git@github.com:KristerV/krister.git;;
+        movieatmyplace ) cd $HOME/code && git clone git@github.com:KristerV/movieatmyplace.git;;
+        koodikool ) cd $HOME/code && git clone git@github.com:KristerV/koodikool.git;;
+        poll ) cd $HOME/code && git clone git@github.com:KristerV/poll.git;;
+        LunarDevs ) cd $HOME/code && git clone git@github.com:KristerV/LunarDevs.git;;
+        tickets ) cd $HOME/code && git clone git@github.com:KristerV/tickets.git;;
+        javaCheatsheet ) cd $HOME/code && git clone git@github.com:KristerV/javaCheatsheet.git;;
+
+}
+
+# ssh
+s () {
+    clear
+    getService $1
+    ssh root@$ip
+}
+
+# update
+u () {
+    clear
+    getService $1
+    echo "=== UPDATING $service ==="
+    case $server in
+        meteor ) ssh root@$ip "cd /srv/$service/ && git checkout . && git pull && cd /srv/deploy_$service/ && mup deploy";;
+        toitla ) if [[ $service="toitlalive" ]];
+                then
+                    ssh root@$ip "bash -ic dep_live"
+                else
+                    ssh root@$ip "bash -ic dep_dev"
+                fi ;;
+        ghost ) ssh root@$ip "service ghost stop && cd /var/www/ && wget http://ghost.org/zip/ghost-latest.zip && rm -rf ghost/core && unzip -uo ghost*.zip -d ghost && chown -R ghost:ghost ghost/* && cd /var/www/ghost && npm install --production && service ghost start";;
+        * ) echo "Service not updatable"; exit 1 ;;
+    esac
+
+}
+
+# backup
+b () {
+    getService $1
+    echo "=== BACKUP $server ==="
+    mkdir -p mkdir $backup_dir/db_$server
+    case $server in
+        meteor | toitla ) ssh root@$ip "mongodump -o /srv/dump/$(date +%F)/";
+                mkdir $backup_dir/db_$server/$(date +%F);
+                scp -r root@$ip:/srv/dump/$(ssh root@$ip 'ls -t /srv/dump | head -1')/* $backup_dir/db_$server/$(date +%F);
+                ;;
+        ghost ) mkdir $backup_dir/db_$server/$(date +%F);
+                scp root@$ip:/var/www/ghost/content/data/ghost.db $backup_dir/db_$server/$(date +%F);;
+        * ) echo "Service not updatable"; exit 1 ;;
+    esac
+}
+
+# restore
+r () {
+    getService $1
+    echo "== RESTORE $service"
+    mongorestore -h localhost --port 3001 --db meteor --drop $backup_dir/db_$server/$(ls -t $backup_dir/db_$server/ | head -1)/$service/
+}
+
+# display options
+k () {
+    echo "
+  Linux activities    Meteor commands     Services
+  ----------------    -----------------   -------------------
+  gen - general       c     - cd          ti     - ting
+  sc  - screencast    s     - ssh         gh     - ghost
+                      d     - deploy      todev  - toitladev
+                      b     - backup      tolive - toitlalive
+                      r     - restore     kr     - krister
+                      u     - update      mo     - movienight
+                                          ko     - koodikool
+                                          po     - poll
+                                          lu     - lunardevs
+                                          tick   - tickets
+                                          java   - javaCheatsheet
+"
+}
