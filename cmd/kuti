@@ -135,3 +135,11 @@ k () {
 m () {
     meteor
 }
+
+gen () {
+    $dir/kuti_general
+}
+
+sc () {
+    $dir/kuti_screencast
+}
