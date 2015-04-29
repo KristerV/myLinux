@@ -127,5 +127,11 @@ k () {
                                           lu     - lunardevs
                                           tick   - tickets
                                           java   - javaCheatsheet
+                                          koos   - kooselu
+                                          lin    - myLinux
 "
+}
+
+m () {
+    meteor
 }

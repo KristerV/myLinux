@@ -1,0 +1,437 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"max",
+				"maxAnswers"
+			],
+			[
+				"co",
+				"correctAnswers"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/home/krister/code/myLinux/cmd/functions.sh",
+			"settings":
+			{
+				"buffer_size": 620,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 72.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"bash",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 593.0
+	},
+	"console":
+	{
+		"height": 179.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2deb499853c4371624f5a07e27c334aa' + 'bf8c4e67d14fb0525ba4f89698a6d7e1'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/krister/code/myLinux",
+		"/home/krister/code/myLinux/cmd"
+	],
+	"file_history":
+	[
+		"/home/krister/code/myLinux/cmd/kuti"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"<open folders>,-.meteor/*",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"service",
+			"windows",
+			"VGA1",
+			"1280x720_60.00",
+			"1024",
+			"$ ",
+			" from git",
+			"live",
+			"node_modules",
+			"exit",
+			"kup/ghost",
+			"178.62.237.194",
+			"import java.util.*;",
+			" // asenda",
+			" // veeruMinid",
+			" // veeruMaxid",
+			" // veeruSummad",
+			" // muster",
+			" // main",
+			" // Answer",
+			"t = ",
+			"new int",
+			"t = ",
+			"new int",
+			"t = ",
+			"new int",
+			"Aout.toString",
+			"t = ",
+			"Aout.toString(t)",
+			"nput: \" + Aout.toString(t)",
+			"Arrays",
+			"t = new in",
+			"korraTabel",
+			"t = ",
+			"new int",
+			"t = ",
+			"r.score (t));",
+			" // 9",
+			"t = new int",
+			"t = new doub",
+			"Ãµ",
+			"t = new doub",
+			"t = new d",
+			"t = new int",
+			"t = ne",
+			" // ",
+			"//",
+			"t = new int[]",
+			"t = ",
+			"t =",
+			"      ",
+			"\n",
+			"a=\"+a+\" b=\"+b",
+			"      a=",
+			"//",
+			" a=\"+a+\" b=\"+b,",
+			"   a=",
+			"());",
+			"   a=",
+			".;",
+			"   a=",
+			"a=",
+			"aatriks2.v1",
+			"ihtnemassiiv.v3",
+			".kymnelised.v1",
+			"./i200.maatriks2.v1",
+			"./i200.lihtnemassiiv.v3",
+			"./i200.kymnelised.v1",
+			"dtickets",
+			"\\n",
+			"<br>",
+			"e.l",
+			"answersCorrect",
+			":",
+			"answersCorrect",
+			"maxpo",
+			"macpoi",
+			"name=\"skip\"",
+			"le.lo",
+			"set('ques",
+			"Session.get('question')",
+			"session.get",
+			"answer_limit_reached",
+			"max",
+			"generateHash",
+			"form[name=",
+			"$()",
+			"le.lo",
+			":",
+			"maxPoints",
+			"maxQuestions",
+			"Save",
+			"Cancel",
+			"questions-max",
+			"points-drop",
+			"questions-max",
+			"data-toggle=\"dropdown\"",
+			"data-toggle=\"dropdown\" aria-expanded=\"false\"",
+			"name",
+			"data-toggle=\"dropdown\" aria-expanded=\"false\" ",
+			"data-toggle=\"dropdown\" aria-expanded=\"false\"",
+			"current.students",
+			"console",
+			"sessio",
+			"Sessions",
+			"createTitle",
+			", obj",
+			"lib32",
+			"con",
+			"conky",
+			"drop-down",
+			">",
+			">&l",
+			"><",
+			"\"<",
+			"<"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"name=\"next\"",
+			"students"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/home/krister/code/myLinux/cmd/functions.sh",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 620,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								497,
+								497
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 30.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "myLinux.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"adminjade",
+				"client/admin.jade"
+			],
+			[
+				"style",
+				"client/style.less"
+			],
+			[
+				"transla",
+				"lib/Translate.js"
+			],
+			[
+				"routerjs",
+				"lib/router.js"
+			],
+			[
+				"userjade",
+				"client/user.jade"
+			],
+			[
+				"clientjade",
+				"client/admin.jade"
+			],
+			[
+				"sty",
+				"client/style.less"
+			],
+			[
+				"client",
+				"client/Client.js"
+			],
+			[
+				"adminjs",
+				"client/admin.js"
+			],
+			[
+				"clie",
+				"client/Client.js"
+			],
+			[
+				"layoutjs",
+				"client/layout.js"
+			],
+			[
+				"global",
+				"lib/Global.js"
+			],
+			[
+				"layoutjade",
+				"client/layout.jade"
+			],
+			[
+				"trans",
+				"lib/Translate.js"
+			],
+			[
+				"userjs",
+				"client/user.js"
+			],
+			[
+				"translate",
+				"lib/Translate.js"
+			],
+			[
+				"globa",
+				"lib/Global.js"
+			],
+			[
+				"layoutja",
+				"client/layout.jade"
+			],
+			[
+				"layout",
+				"client/layout.jade"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 501.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Templates/homefood.sublime-project"
+			],
+			[
+				"kris",
+				"~/Templates/krister.sublime-project"
+			],
+			[
+				"ti",
+				"~/Templates/tickets.sublime-project"
+			]
+		],
+		"width": 381.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
