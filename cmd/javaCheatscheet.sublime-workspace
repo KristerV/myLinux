@@ -16,10 +16,10 @@
 	"buffers":
 	[
 		{
-			"file": "/home/krister/code/myLinux/cmd/kuti",
+			"file": "/home/krister/code/javaCheatsheet/client/contents/sisendValjund.jade",
 			"settings":
 			{
-				"buffer_size": 4952,
+				"buffer_size": 274,
 				"line_ending": "Unix"
 			}
 		}
@@ -69,8 +69,9 @@
 	},
 	"expanded_folders":
 	[
-		"/home/krister/code/myLinux",
-		"/home/krister/code/myLinux/cmd"
+		"/home/krister/code/javaCheatsheet",
+		"/home/krister/code/javaCheatsheet/client",
+		"/home/krister/code/javaCheatsheet/client/contents"
 	],
 	"file_history":
 	[
@@ -234,29 +235,27 @@
 			[
 				{
 					"buffer": 0,
-					"file": "/home/krister/code/myLinux/cmd/kuti",
+					"file": "/home/krister/code/javaCheatsheet/client/contents/sisendValjund.jade",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4952,
+						"buffer_size": 274,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4950,
-								4950
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 1890.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -301,7 +300,7 @@
 		"height": 0.0
 	},
 	"pinned_build_system": "",
-	"project": "myLinux.sublime-project",
+	"project": "javaCheatscheet.sublime-project",
 	"replace":
 	{
 		"height": 42.0
@@ -313,6 +312,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"javafx",
+				"client/contents/javaFX.jade"
+			],
 			[
 				"adminjade",
 				"client/admin.jade"

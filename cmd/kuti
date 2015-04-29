@@ -45,18 +45,18 @@ c () {
 clone () {
     echo "=== CLONING $service ==="
     case $service in
-        ting ) cd $HOME/code && git clone git@github.com:KristerV/ting.git;;
-        ghost ) echo "Can't clone Ghost, stupid!" ;;
+        ting )                   cd $HOME/code && git clone git@github.com:KristerV/ting.git;;
+        ghost )                  echo "Can't clone Ghost, stupid!" ;;
         toitladev | toitlalive ) cd $HOME/code && git clone git@bitbucket.org:kriv/toitla.git ;;
-        krister ) cd $HOME/code && git clone git@github.com:KristerV/krister.git;;
-        movieatmyplace ) cd $HOME/code && git clone git@github.com:KristerV/movieatmyplace.git;;
-        koodikool ) cd $HOME/code && git clone git@github.com:KristerV/koodikool.git;;
-        poll ) cd $HOME/code && git clone git@github.com:KristerV/poll.git;;
-        LunarDevs ) cd $HOME/code && git clone git@github.com:KristerV/LunarDevs.git;;
-        tickets ) cd $HOME/code && git clone git@github.com:KristerV/tickets.git;;
-        javaCheatsheet ) cd $HOME/code && git clone git@github.com:KristerV/javaCheatsheet.git;;
-        myLinux ) cd $HOME/code && git clone git@github.com:KristerV/myLinux.git;;
-        kooselu ) cd $HOME/code && git clone git@bitbucket.org:kriv/kooselu.git;;
+        krister )                cd $HOME/code && git clone git@github.com:KristerV/krister.git;;
+        movieatmyplace )         cd $HOME/code && git clone git@github.com:KristerV/movieatmyplace.git;;
+        koodikool )              cd $HOME/code && git clone git@github.com:KristerV/koodikool.git;;
+        poll )                   cd $HOME/code && git clone git@github.com:KristerV/poll.git;;
+        LunarDevs )              cd $HOME/code && git clone git@github.com:KristerV/LunarDevs.git;;
+        tickets )                cd $HOME/code && git clone git@github.com:KristerV/tickets.git;;
+        javaCheatsheet )         cd $HOME/code && git clone git@github.com:KristerV/javaCheatsheet.git;;
+        myLinux )                cd $HOME/code && git clone git@github.com:KristerV/myLinux.git;;
+        kooselu )                cd $HOME/code && git clone git@bitbucket.org:kriv/kooselu.git;;
         * ) echo "git not set up for $service"
     esac
 
@@ -118,10 +118,10 @@ k () {
   ----------------    -----------------   -------------------
   gen - general       c     - cd          ti     - ting
   sc  - screencast    s     - ssh         gh     - ghost
-                      d     - deploy      todev  - toitladev
+                      u     - update      todev  - toitladev
                       b     - backup      tolive - toitlalive
                       r     - restore     kr     - krister
-                      u     - update      mo     - movienight
+                                          mo     - movienight
                                           ko     - koodikool
                                           po     - poll
                                           lu     - lunardevs

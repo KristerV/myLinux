@@ -15,14 +15,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "/home/krister/code/myLinux/cmd/kuti",
-			"settings":
-			{
-				"buffer_size": 4952,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -69,16 +61,21 @@
 	},
 	"expanded_folders":
 	[
-		"/home/krister/code/myLinux",
-		"/home/krister/code/myLinux/cmd"
+		"/home/krister/code/LunarDevs"
 	],
 	"file_history":
 	[
+		"/home/krister/code/LunarDevs/client/frontpage/frontpage.jade",
+		"/home/krister/I200/java.itcollege.ee",
+		"/home/krister/I200/ettevalmistus",
+		"/home/krister/I200/ainekava",
+		"/home/krister/I200/puudu",
+		"/home/krister/code/javaCheatsheet/client/contents/sisendValjund.jade",
 		"/home/krister/code/myLinux/cmd/kuti"
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 34.0
 	},
 	"find_in_files":
 	{
@@ -229,39 +226,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "/home/krister/code/myLinux/cmd/kuti",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4952,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4950,
-								4950
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1890.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -301,7 +267,7 @@
 		"height": 0.0
 	},
 	"pinned_build_system": "",
-	"project": "myLinux.sublime-project",
+	"project": "LunadDevs.sublime-project",
 	"replace":
 	{
 		"height": 42.0
@@ -313,6 +279,14 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"frontjade",
+				"client/frontpage/frontpage.jade"
+			],
+			[
+				"javafx",
+				"client/contents/javaFX.jade"
+			],
 			[
 				"adminjade",
 				"client/admin.jade"
@@ -395,9 +369,13 @@
 	"select_project":
 	{
 		"height": 501.0,
-		"last_filter": "",
+		"last_filter": "lin",
 		"selected_items":
 		[
+			[
+				"lin",
+				"~/code/myLinux/config/sublime/projects/myLinux.sublime-project"
+			],
 			[
 				"",
 				"~/Templates/homefood.sublime-project"
