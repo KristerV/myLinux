@@ -80,7 +80,7 @@ function r {
     echo "clear files"
     rem
     echo "record screen"
-    rec
+    recRegion
     echo "resize"
     res $fps $2
     echo "convert to gif"

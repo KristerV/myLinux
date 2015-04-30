@@ -17,6 +17,7 @@ getService () {
         koos ) service="kooselu"       ; server="meteor" ;;
         lin ) service="myLinux";;
         java ) service="javaCheatsheet" ;;
+        javah ) service="javaHarjutused" ;;
     esac
 
     getIP $server
@@ -57,6 +58,7 @@ clone () {
         javaCheatsheet )         cd $HOME/code && git clone git@github.com:KristerV/javaCheatsheet.git;;
         myLinux )                cd $HOME/code && git clone git@github.com:KristerV/myLinux.git;;
         kooselu )                cd $HOME/code && git clone git@bitbucket.org:kriv/kooselu.git;;
+        javaHarjutused )         cd $HOME/code && git clone git@github.com:KristerV/javaHarjutused.git;;
         * ) echo "git not set up for $service"
     esac
 
@@ -141,5 +143,5 @@ gen () {
 }
 
 sc () {
-    $dir/kuti_screencast
+    $dir/kuti_screencast.sh
 }

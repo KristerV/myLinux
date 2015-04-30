@@ -19,7 +19,23 @@
 			"file": "/home/krister/code/myLinux/cmd/kuti",
 			"settings":
 			{
-				"buffer_size": 4952,
+				"buffer_size": 5326,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/krister/I200/puudu",
+			"settings":
+			{
+				"buffer_size": 457,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/krister/code/myLinux/cmd/kuti_general",
+			"settings":
+			{
+				"buffer_size": 2009,
 				"line_ending": "Unix"
 			}
 		}
@@ -94,6 +110,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"foor",
+			"Foor",
+			")",
+			"&&",
 			"service",
 			"windows",
 			"VGA1",
@@ -238,15 +258,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4952,
+						"buffer_size": 5326,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4950,
-								4950
+								905,
+								905
 							]
 						],
 						"settings":
@@ -256,10 +276,68 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1890.0,
+						"translation.y": 45.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/home/krister/I200/puudu",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 457,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								294,
+								294
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/home/krister/code/myLinux/cmd/kuti_general",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 2009,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -395,9 +473,13 @@
 	"select_project":
 	{
 		"height": 501.0,
-		"last_filter": "",
+		"last_filter": "java",
 		"selected_items":
 		[
+			[
+				"java",
+				"~/code/myLinux/cmd/javaCheatscheet.sublime-project"
+			],
 			[
 				"",
 				"~/Templates/homefood.sublime-project"
@@ -430,7 +512,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 150.0,
+	"side_bar_width": 180.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
