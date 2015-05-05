@@ -11,13 +11,13 @@
 	"highlight_line": true,
 	"ignored_packages":
 	[
-		"BracketHighlighter",
-		"Sublimerge Pro",
 		"SublimeLinter",
+		"BracketHighlighter",
 		"GitGutter",
-		"Go",
 		"Sublime Bookmarks",
-		"Vintage"
+		"Vintage",
+		"Sublimerge Pro",
+		"Go"
 	],
 	"indent_guide_options":
 	[

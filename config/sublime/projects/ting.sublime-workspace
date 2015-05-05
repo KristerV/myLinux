@@ -15,22 +15,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "/home/krister/code/javaCheatsheet/client/contents/sisendValjund.jade",
-			"settings":
-			{
-				"buffer_size": 274,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/krister/code/javaCheatsheet/client/contents/intellij.jade",
-			"settings":
-			{
-				"buffer_size": 1228,
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -77,17 +61,27 @@
 	},
 	"expanded_folders":
 	[
-		"/home/krister/code/javaCheatsheet",
-		"/home/krister/code/javaCheatsheet/client",
-		"/home/krister/code/javaCheatsheet/client/contents"
+		"/home/krister/code/ting",
+		"/home/krister/code/ting/client",
+		"/home/krister/code/ting/client/controller",
+		"/home/krister/code/ting/client/view",
+		"/home/krister/code/ting/server"
 	],
 	"file_history":
 	[
-		"/home/krister/code/myLinux/cmd/kuti"
+		"/home/krister/code/ting/client/controller/menuItem.js",
+		"/home/krister/code/ting/client/controller/module.js",
+		"/home/krister/code/ting/server/mailgun.js",
+		"/home/krister/code/ting/server/methods.js",
+		"/home/krister/code/ting/client/controller/index.js",
+		"/home/krister/code/ting/client/view/module.jade",
+		"/home/krister/I200/puudu",
+		"/home/krister/code/myLinux/cmd/kuti",
+		"/home/krister/code/myLinux/cmd/kuti_screencast.sh"
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 34.0
 	},
 	"find_in_files":
 	{
@@ -103,6 +97,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"+module",
+			"module",
+			"myLinux",
+			"foor",
+			"Foor",
+			")",
+			"&&",
 			"service",
 			"windows",
 			"VGA1",
@@ -238,66 +239,8 @@
 	"groups":
 	[
 		{
-			"selected": 1,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "/home/krister/code/javaCheatsheet/client/contents/sisendValjund.jade",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 274,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/home/krister/code/javaCheatsheet/client/contents/intellij.jade",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1228,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1089,
-								1089
-							]
-						],
-						"settings":
-						{
-							"open_with_edit": true,
-							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 518.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -337,7 +280,7 @@
 		"height": 0.0
 	},
 	"pinned_build_system": "",
-	"project": "javaCheatscheet.sublime-project",
+	"project": "ting.sublime-project",
 	"replace":
 	{
 		"height": 42.0
@@ -350,8 +293,12 @@
 		"selected_items":
 		[
 			[
-				"javafx",
-				"client/contents/javaFX.jade"
+				"menuitemjs",
+				"client/controller/menuItem.js"
+			],
+			[
+				"modulejade",
+				"client/view/module.jade"
 			],
 			[
 				"adminjade",
@@ -435,12 +382,12 @@
 	"select_project":
 	{
 		"height": 501.0,
-		"last_filter": "lin",
+		"last_filter": "",
 		"selected_items":
 		[
 			[
-				"lin",
-				"~/code/myLinux/config/sublime/projects/myLinux.sublime-project"
+				"java",
+				"~/code/myLinux/cmd/javaCheatscheet.sublime-project"
 			],
 			[
 				"",
@@ -473,8 +420,8 @@
 	"show_minimap": false,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": true,
-	"side_bar_width": 150.0,
+	"side_bar_visible": false,
+	"side_bar_width": 180.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

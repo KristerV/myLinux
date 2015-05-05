@@ -15,30 +15,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "/home/krister/code/myLinux/cmd/kuti",
-			"settings":
-			{
-				"buffer_size": 5326,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/krister/I200/puudu",
-			"settings":
-			{
-				"buffer_size": 457,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/krister/code/myLinux/cmd/kuti_general",
-			"settings":
-			{
-				"buffer_size": 2009,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -90,7 +66,9 @@
 	],
 	"file_history":
 	[
-		"/home/krister/code/myLinux/cmd/kuti"
+		"/home/krister/I200/puudu",
+		"/home/krister/code/myLinux/cmd/kuti",
+		"/home/krister/code/myLinux/cmd/kuti_screencast.sh"
 	],
 	"find":
 	{
@@ -110,6 +88,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"myLinux",
 			"foor",
 			"Foor",
 			")",
@@ -249,97 +228,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "/home/krister/code/myLinux/cmd/kuti",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5326,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								905,
-								905
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 45.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/home/krister/I200/puudu",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 457,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								294,
-								294
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "/home/krister/code/myLinux/cmd/kuti_general",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 2009,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -511,7 +401,7 @@
 	"show_minimap": false,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 180.0,
 	"status_bar_visible": true,
 	"template_settings":
