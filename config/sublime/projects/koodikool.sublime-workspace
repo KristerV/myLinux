@@ -19,24 +19,6 @@
 	},
 	"buffers":
 	[
-		{
-			"contents": "Searching 131 files for \"google\"\n\n/home/krister/code/toitla/packages/toitla:map/MapCalculations.js:\n   49  					chefLocation = chefLocation.geometry.location;\n   50  					if (location.radius >= Map.distanceBetweenLatLon(location, {\n   51: 							// I have no idea why google named these keys like this\n   52  							lat: chefLocation.k,\n   53  							lng: chefLocation.B\n\n/home/krister/code/toitla/packages/toitla:map/map-api.js:\n    1  Map = {\n    2  	createMap : function(elemId) {\n    3: 		var tallinn = new google.maps.LatLng(59.437222, 24.745278);\n    4  \n    5  		var mapOptions = {\n    .\n    8  			zoom : 12\n    9  		};\n   10: 		return new google.maps.Map(document.getElementById(elemId), mapOptions);\n   11  	}	\n   12  };\n\n/home/krister/code/toitla/packages/toitla:map/package.js:\n    9  	api.versionsFrom('1.0');\n   10  	api.use(['mquandalle:jade', 'less', 'templating'], 'client')\n   11: 	api.use('dburles:google-maps');\n   12  	api.imply('toitla:account');\n   13  	api.addFiles(['view/map.jade', 'view/map.less', 'view/map.js'], 'client');\n\n/home/krister/code/toitla/packages/toitla:map/view/map.jade:\n    4  			input.map-autocomplete(type=\"text\")\n    5  		.map-wrapper\n    6: 			+googleMap(name=name options=mapOptions)\n    7  \n\n/home/krister/code/toitla/packages/toitla:map/view/map.js:\n    1  Meteor.startup(function() {\n    2: 	GoogleMaps.load({\n    3  		key : 'AIzaSyBTF7DCswQz8sZn8WvDnPmFVwz7rjFeQQk',\n    4  		libraries : 'places'\n    .\n   10  \n   11  var setMarker = function(lat, lng) {\n   12: 	var loc = new google.maps.LatLng(lat, lng);\n   13  	map.setCenter(loc);\n   14  	map.setZoom(14);\n   ..\n   45  	},\n   46  	mapOptions: function() {\n   47: 		if (GoogleMaps.loaded()) {\n   48: 			var tallinn = new google.maps.LatLng(59.437222, 24.745278);\n   49  			\n   50  			var initialCenter = tallinn;\n   ..\n   53  			var user = Meteor.user();\n   54  			if (user.profile && user.profile.location) {\n   55: 				initialCenter = new google.maps.LatLng(user.profile.location.lat, user.profile.location.lng);\n   56  				initialAddress = user.profile.location.address;\n   57  			}\n   58  			\n   59  			\n   60: 			GoogleMaps.ready(this.name, function(m) {\n   61  				map = m.instance;\n   62  				\n   63: 				marker = new google.maps.Marker({ map: map, visible: false });\n   64  				\n   65  				if (isAutocompleteShown(this.type)) {\n   ..\n   69  						marker.setVisible(true);\n   70  					}\n   71: 					var autocomplete = new google.maps.places.Autocomplete($('.map-autocomplete')[0], {\n   72  						types : [ 'geocode' ],\n   73  					});\n   ..\n   92  								var address = placeName + ', ' + placeAddress;\n   93  								$(this).val(address);\n   94: 								var geocoder = new google.maps.Geocoder();\n   95  								geocoder.geocode({'address' : address}, function(results, status) {\n   96: 									if (status == google.maps.GeocoderStatus.OK) {\n   97  										changeFunction.bind({\n   98  											getPlace : function() {return results[0];}\n   ..\n  103  						}\n  104  					});\n  105: 					google.maps.event.addListener(autocomplete, 'place_changed', changeFunction);\n  106  				}				\n  107  			}.bind(this));\n\n16 matches across 5 files\n\n\nSearching 131 files for \"googleanalytics\"\n\n0 matches\n\nSearching 131 files for \"analy\"\n\n0 matches",
-			"settings":
-			{
-				"buffer_size": 3250,
-				"line_ending": "Windows",
-				"name": "Find Results",
-				"scratch": true
-			}
-		},
-		{
-			"file": "/home/krister/code/toitla/lib/router.js",
-			"settings":
-			{
-				"buffer_size": 230,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -83,13 +65,29 @@
 	},
 	"expanded_folders":
 	[
-		"/home/krister/code/toitla",
-		"/home/krister/code/toitla/client",
-		"/home/krister/code/toitla/lib",
-		"/home/krister/code/toitla/public"
+		"/home/krister/code/koodikool",
+		"/home/krister/code/koodikool/client",
+		"/home/krister/code/koodikool/client/contents",
+		"/home/krister/code/koodikool/client/lib",
+		"/home/krister/code/koodikool/lib",
+		"/home/krister/code/koodikool/server"
 	],
 	"file_history":
 	[
+		"/home/krister/code/koodikool/lib/router.js",
+		"/home/krister/code/koodikool/client/index.js",
+		"/home/krister/code/koodikool/client/contents/hinnad.js",
+		"/home/krister/code/koodikool/server/methods.js",
+		"/home/krister/code/koodikool/client/contents/register.js",
+		"/home/krister/code/koodikool/client/contents/register.jade",
+		"/home/krister/code/koodikool/lib/G.js",
+		"/home/krister/code/koodikool/client/lib/Forms.js",
+		"/home/krister/code/koodikool/lib/collections.js",
+		"/home/krister/code/koodikool/client/registreeri.jade",
+		"/home/krister/code/koodikool/client/registreeri.js",
+		"/home/krister/code/koodikool/client/kursused.jade",
+		"/home/krister/code/koodikool/client/layout.jade",
+		"/home/krister/code/koodikool/client/navbar.jade",
 		"/home/krister/Downloads/Leaff-v1.4/Site/assets/js/custom.js",
 		"/home/krister/code/toitla/client/icons.html",
 		"/home/krister/code/toitla/client/gallery.html",
@@ -151,9 +149,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"analy",
-			"googleanalytics",
-			"google",
+			"setUserHash",
+			"userHash",
+			"saveApplicationValue",
+			"application",
 			"../../js/",
 			"require",
 			"require(",
@@ -277,8 +276,7 @@
 			"set('ques",
 			"Session.get('question')",
 			"session.get",
-			"answer_limit_reached",
-			"max"
+			"answer_limit_reached"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -301,144 +299,8 @@
 	"groups":
 	[
 		{
-			"selected": 1,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3250,
-						"regions":
-						{
-							"match":
-							{
-								"flags": 112,
-								"regions":
-								[
-									[
-										268,
-										274
-									],
-									[
-										511,
-										517
-									],
-									[
-										647,
-										653
-									],
-									[
-										916,
-										922
-									],
-									[
-										1192,
-										1198
-									],
-									[
-										1343,
-										1349
-									],
-									[
-										1529,
-										1535
-									],
-									[
-										1675,
-										1681
-									],
-									[
-										1726,
-										1732
-									],
-									[
-										1946,
-										1952
-									],
-									[
-										2123,
-										2129
-									],
-									[
-										2230,
-										2236
-									],
-									[
-										2434,
-										2440
-									],
-									[
-										2686,
-										2692
-									],
-									[
-										2823,
-										2829
-									],
-									[
-										3005,
-										3011
-									]
-								],
-								"scope": ""
-							}
-						},
-						"selection":
-						[
-							[
-								3250,
-								3250
-							]
-						],
-						"settings":
-						{
-							"default_dir": "/home/krister/code/toitla",
-							"detect_indentation": false,
-							"line_numbers": false,
-							"output_tag": 3,
-							"result_base_dir": "",
-							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
-							"result_line_regex": "^ +([0-9]+):",
-							"scroll_past_end": true,
-							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 1410.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/home/krister/code/toitla/lib/router.js",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 230,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -478,7 +340,7 @@
 		"height": 0.0
 	},
 	"pinned_build_system": "",
-	"project": "toitla.sublime-project",
+	"project": "koodikool.sublime-project",
 	"replace":
 	{
 		"height": 42.0
@@ -490,6 +352,26 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"router",
+				"lib/router.js"
+			],
+			[
+				"rout",
+				"lib/router.js"
+			],
+			[
+				"regijade",
+				"client/contents/register.jade"
+			],
+			[
+				"regjade",
+				"client/contents/register.jade"
+			],
+			[
+				"form",
+				"client/lib/Forms.js"
+			],
 			[
 				"index2",
 				"client/index-2.html"
@@ -596,24 +478,24 @@
 	"select_project":
 	{
 		"height": 501.0,
-		"last_filter": "koo",
+		"last_filter": "chat",
 		"selected_items":
 		[
 			[
-				"koo",
-				"~/code/myLinux/config/sublime/projects/koodikool.sublime-project"
+				"chat",
+				"~/code/myLinux/config/sublime/projects/chat-bubble.sublime-project"
 			],
 			[
 				"java",
 				"~/code/myLinux/config/sublime/projects/javaCheatsheet.sublime-project"
 			],
 			[
-				"",
-				"~/code/myLinux/config/sublime/projects/chat-bubble.sublime-project"
-			],
-			[
 				"lin",
 				"~/code/myLinux/config/sublime/projects/myLinux.sublime-project"
+			],
+			[
+				"",
+				"~/Templates/homefood.sublime-project"
 			],
 			[
 				"kris",

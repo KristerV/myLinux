@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"obs",
+				"observeChanges	Meteor: cursor.observeChanges(callbacks)"
+			],
+			[
+				"fun",
+				"function〔keyword〕"
+			],
+			[
+				"ChatB",
+				"ChatBubblesCollection〔variable〕"
+			],
+			[
+				"backg",
+				"background-clip"
+			],
+			[
 				"max",
 				"maxAnswers"
 			],
@@ -16,11 +32,11 @@
 	"buffers":
 	[
 		{
-			"file": "/home/krister/code/myLinux/cmd/kuti",
+			"file": "/home/krister/code/chat-bubble/README.md",
 			"settings":
 			{
-				"buffer_size": 5519,
-				"line_ending": "Unix"
+				"buffer_size": 607,
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -69,14 +85,44 @@
 	},
 	"expanded_folders":
 	[
-		"/home/krister/code/myLinux",
-		"/home/krister/code/myLinux/cmd"
+		"/home/krister/code/chat-bubble",
+		"/home/krister/code/chat-bubble/view",
+		"/home/krister/code/chatting"
 	],
 	"file_history":
 	[
-		"/home/krister/I200/puudu",
-		"/home/krister/code/myLinux/cmd/kuti",
-		"/home/krister/code/myLinux/cmd/kuti_screencast.sh"
+		"/home/krister/code/chat-bubble/router.js",
+		"/home/krister/code/chat-bubble/view/chatBubbles.jade",
+		"/home/krister/code/chat-bubble/view/chatBubbles.js",
+		"/home/krister/code/chat-bubble/view/chatBubbles.less",
+		"/home/krister/code/chatting/chatting.js",
+		"/home/krister/code/chat-bubble/collections.js",
+		"/home/krister/code/chatting/chatting.css",
+		"/home/krister/code/chat-bubble/package.js",
+		"/home/krister/code/chatting/chatting.html",
+		"/home/krister/code/chatting/router.js",
+		"/home/krister/code/chat-bubble/view/chatBubble.jade",
+		"/home/krister/code/chat-bubble/README.md",
+		"/home/krister/code/chat-bubble/ChatBubbleConfig.js",
+		"/home/krister/code/chat-bubble/view/chatBubble.js",
+		"/home/krister/code/chatting/packages/chat-bubble/package.js",
+		"/home/krister/code/chatting/.meteor/versions",
+		"/home/krister/code/chat-bubble/view/chatBubble.html",
+		"/home/krister/code/toitla/packages/chat-bubble/view/chatBubble.less",
+		"/home/krister/code/toitla/client/index.jade",
+		"/home/krister/code/toitla/packages/chat-bubble/view/chatBubble.jade",
+		"/home/krister/code/toitla/packages/chat-bubble/ChatBubble.js",
+		"/home/krister/code/toitla/packages/chat-bubble/collections.js",
+		"/home/krister/code/toitla/packages/chat-bubble/package.js",
+		"/home/krister/code/toitla/packages/toitla:common/package.js",
+		"/home/krister/code/toitla/packages/chat-bubble/view/bubble.less",
+		"/home/krister/code/toitla/packages/chat-bubble/view/bubble.jade",
+		"/home/krister/code/toitla/client/index.js",
+		"/home/krister/code/toitla/lib/collections.js",
+		"/home/krister/code/toitla/client/Events.js",
+		"/home/krister/code/toitla/client/index.less",
+		"/home/krister/code/toitla/lib/configuration.js",
+		"/home/krister/code/toitla/client/lib/lightbox/css/lightbox.css"
 	],
 	"find":
 	{
@@ -96,14 +142,48 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"ip",
-			"root@$ip",
-			"myLinux",
-			"foor",
-			"Foor",
-			")",
-			"&&",
-			"service",
+			"userId",
+			"7",
+			"c4c4c4",
+			"arrow_box_guest",
+			"arrow_box_admin",
+			"arrow_box",
+			"gba(216, 232, 254, 0)",
+			"87d3e6",
+			"D8E8FE",
+			"arrow_box_admin",
+			"D8E8FE",
+			"arrow_box",
+			"8WninNcFDSh6SwdxX",
+			"message8, role: 'admin'}",
+			"'admin},",
+			"yrJNBNXmvkuzZ3aLD",
+			"RfNMPX9FaE4S8sFFy",
+			"8WninNcFDSh6SwdxX",
+			"yrJNBNXmvkuzZ3aLD",
+			"userId",
+			"chat-bubbles",
+			"''",
+			"html",
+			"chatBubble",
+			"jade",
+			";",
+			"ChatBubblesCollection",
+			"ChatBubbles",
+			"map",
+			"Posts",
+			"h1",
+			"20%",
+			"20",
+			"80%",
+			"-top",
+			"shortname",
+			"margin",
+			" ",
+			"h2",
+			"font-s",
+			"hei",
+			"/img",
 			"windows",
 			"VGA1",
 			"1280x720_60.00",
@@ -189,36 +269,7 @@
 			"max",
 			"generateHash",
 			"form[name=",
-			"$()",
-			"le.lo",
-			":",
-			"maxPoints",
-			"maxQuestions",
-			"Save",
-			"Cancel",
-			"questions-max",
-			"points-drop",
-			"questions-max",
-			"data-toggle=\"dropdown\"",
-			"data-toggle=\"dropdown\" aria-expanded=\"false\"",
-			"name",
-			"data-toggle=\"dropdown\" aria-expanded=\"false\" ",
-			"data-toggle=\"dropdown\" aria-expanded=\"false\"",
-			"current.students",
-			"console",
-			"sessio",
-			"Sessions",
-			"createTitle",
-			", obj",
-			"lib32",
-			"con",
-			"conky",
-			"drop-down",
-			">",
-			">&l",
-			"><",
-			"\"<",
-			"<"
+			"$()"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -243,26 +294,25 @@
 			[
 				{
 					"buffer": 0,
-					"file": "/home/krister/code/myLinux/cmd/kuti",
+					"file": "/home/krister/code/chat-bubble/README.md",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5519,
+						"buffer_size": 607,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								273,
-								273
+								70,
+								70
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"auto_complete": false,
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -310,7 +360,7 @@
 		"height": 0.0
 	},
 	"pinned_build_system": "",
-	"project": "myLinux.sublime-project",
+	"project": "chat-bubble.sublime-project",
 	"replace":
 	{
 		"height": 42.0
@@ -322,6 +372,42 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"chatbubbjs",
+				"chat-bubble/view/chatBubbles.js"
+			],
+			[
+				"chatbubbljade",
+				"chat-bubble/view/chatBubbles.jade"
+			],
+			[
+				"chatjs",
+				"chatting/chatting.js"
+			],
+			[
+				"chatless",
+				"chat-bubble/view/chatBubbles.less"
+			],
+			[
+				"chatbubblesjs",
+				"chat-bubble/view/chatBubbles.js"
+			],
+			[
+				"chatbuless",
+				"packages/chat-bubble/view/chatBubble.less"
+			],
+			[
+				"chatbujade",
+				"packages/chat-bubble/view/chatBubble.jade"
+			],
+			[
+				"indexless",
+				"client/index.less"
+			],
+			[
+				"indeless",
+				"client/index.less"
+			],
 			[
 				"adminjade",
 				"client/admin.jade"
@@ -404,20 +490,24 @@
 	"select_project":
 	{
 		"height": 501.0,
-		"last_filter": "to",
+		"last_filter": "lu",
 		"selected_items":
 		[
 			[
-				"to",
-				"~/code/myLinux/config/sublime/projects/toitla.sublime-project"
-			],
-			[
-				"java",
-				"~/code/myLinux/config/sublime/projects/javaCheatsheet.sublime-project"
+				"lu",
+				"~/code/myLinux/config/sublime/projects/LunadDevs.sublime-project"
 			],
 			[
 				"toit",
 				"~/code/myLinux/config/sublime/projects/toitla.sublime-project"
+			],
+			[
+				"kood",
+				"~/code/myLinux/config/sublime/projects/koodikool.sublime-project"
+			],
+			[
+				"lin",
+				"~/code/myLinux/config/sublime/projects/myLinux.sublime-project"
 			],
 			[
 				"",
@@ -451,7 +541,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 180.0,
+	"side_bar_width": 238.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

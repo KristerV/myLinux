@@ -61,11 +61,19 @@
 	},
 	"expanded_folders":
 	[
-		"/home/krister/code/LunarDevs"
+		"/home/krister/code/LunarDevs",
+		"/home/krister/code/LunarDevs/client",
+		"/home/krister/code/LunarDevs/client/background",
+		"/home/krister/code/LunarDevs/client/frontpage",
+		"/home/krister/code/LunarDevs/server"
 	],
 	"file_history":
 	[
+		"/home/krister/code/LunarDevs/client/frontpage/frontpage.less",
+		"/home/krister/code/LunarDevs/client/background/background.less",
+		"/home/krister/code/LunarDevs/client/background/background.html",
 		"/home/krister/code/LunarDevs/client/frontpage/frontpage.jade",
+		"/home/krister/code/LunarDevs/client/index.less",
 		"/home/krister/I200/java.itcollege.ee",
 		"/home/krister/I200/ettevalmistus",
 		"/home/krister/I200/ainekava",
@@ -91,6 +99,24 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"svg",
+			"30",
+			"svg",
+			"rder1.svg",
+			"moz-border-image:",
+			"10px stre",
+			":before",
+			"http://www.w3.org/TR/css3-background/border.png",
+			"	border-image",
+			"	border-image: url(/borders/border1.svg) 10px st",
+			"27",
+			" 30 stret",
+			"-webkit-border-image: url",
+			":before",
+			"max-width",
+			"max-width: 100px;",
+			"m-4",
+			"m-3",
 			"service",
 			"windows",
 			"VGA1",
@@ -200,13 +226,7 @@
 			", obj",
 			"lib32",
 			"con",
-			"conky",
-			"drop-down",
-			">",
-			">&l",
-			"><",
-			"\"<",
-			"<"
+			"conky"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -279,6 +299,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				".less",
+				"client/frontpage/frontpage.less"
+			],
 			[
 				"frontjade",
 				"client/frontpage/frontpage.jade"
@@ -369,9 +393,13 @@
 	"select_project":
 	{
 		"height": 501.0,
-		"last_filter": "lin",
+		"last_filter": "chat",
 		"selected_items":
 		[
+			[
+				"chat",
+				"~/code/myLinux/config/sublime/projects/chat-bubble.sublime-project"
+			],
 			[
 				"lin",
 				"~/code/myLinux/config/sublime/projects/myLinux.sublime-project"
@@ -408,7 +436,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 150.0,
+	"side_bar_width": 185.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

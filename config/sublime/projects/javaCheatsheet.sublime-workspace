@@ -1,0 +1,677 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"advance",
+				"advancedMode"
+			],
+			[
+				"advan",
+				"advancedMode"
+			],
+			[
+				"max",
+				"maxAnswers"
+			],
+			[
+				"co",
+				"correctAnswers"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/home/krister/code/javaCheatsheet/client/contents/hadaabi.jade",
+			"settings":
+			{
+				"buffer_size": 7299,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/home/krister/code/javaCheatsheet/client/index.js",
+			"settings":
+			{
+				"buffer_size": 2391,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 72.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"bash",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 593.0
+	},
+	"console":
+	{
+		"height": 179.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2deb499853c4371624f5a07e27c334aa' + 'bf8c4e67d14fb0525ba4f89698a6d7e1'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/krister/code/javaCheatsheet",
+		"/home/krister/code/javaCheatsheet/client",
+		"/home/krister/code/javaCheatsheet/client/contents"
+	],
+	"file_history":
+	[
+		"/home/krister/code/javaCheatsheet/client/contents/arenduskeskkond.jade",
+		"/home/krister/code/javaCheatsheet/java.itcollege.ee",
+		"/home/krister/code/javaCheatsheet/i200.itcollege.ee",
+		"/home/krister/code/javaCheatsheet/client/index.js",
+		"/home/krister/code/javaCheatsheet/client/contents/kkk.jade",
+		"/home/krister/code/javaCheatsheet/public/robots.txt",
+		"/home/krister/code/javaCheatsheet/client/Scroll.js",
+		"/home/krister/code/javaCheatsheet/client/contents/hadaabi.jade",
+		"/home/krister/code/javaCheatsheet/client/contents.jade",
+		"/home/krister/code/javaCheatsheet/client/index.less",
+		"/home/krister/code/javaCheatsheet/ainekava",
+		"/home/krister/code/javaCheatsheet/ettevalmistus",
+		"/home/krister/code/javaCheatsheet/puudu",
+		"/home/krister/code/javaCheatsheet/client/contents/git.jade",
+		"/home/krister/code/javaCheatsheet/client/contents/intellij.jade",
+		"/home/krister/code/javaCheatsheet/loengud",
+		"/home/krister/code/javaCheatsheet/client/contents/javaAPI.jade",
+		"/home/krister/code/javaCheatsheet/client/contents/muutujad.jade",
+		"/home/krister/Desktop/toitlaleht",
+		"/home/krister/code/javaCheatsheet/client/contents/juhtimisstruktuurid.jade",
+		"/home/krister/code/javaCheatsheet/client/contents/sisendValjund.jade",
+		"/home/krister/code/javaCheatsheet/client/index.jade",
+		"/home/krister/Downloads/tor-browser_en-US/Browser/TorBrowser/Data/Tor/torrc",
+		"/home/krister/Downloads/tor-browser_en-US/Browser/TorBrowser/Data/Tor/torrc.orig.1"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"<open folders>,-.meteor/*",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"(",
+			" ",
+			"* ",
+			"\n",
+			"\n* *  ",
+			"* * * ",
+			"#",
+			"\n	* ",
+			"\n* ",
+			"#",
+			"\n## ",
+			"# ",
+			"//",
+			"bold",
+			"hr",
+			"sm-6.text-danger",
+			"re\n								code",
+			"hr\n					.row",
+			".col-sm-3",
+			"$('.layout-right #'+elementId)",
+			"console.log",
+			"h2",
+			"h4",
+			"h3",
+			"h4",
+			"h3",
+			"border",
+			"h2",
+			"h3",
+			"teada",
+			".panel-info",
+			".col-sm-4",
+			"e\n								code ",
+			"h3",
+			"row",
+			"h2#git-",
+			"l-sm-7",
+			"h2",
+			",",
+			"h2",
+			"strong",
+			" =",
+			"- ",
+			"double",
+			"&&",
+			"meteor add",
+			"**\n",
+			"meteor add ",
+			"meteor add k",
+			"### ",
+			"- ",
+			"node",
+			"cl",
+			"node",
+			"scanner",
+			"mul on segadus",
+			"konsool",
+			"1500",
+			"500",
+			"{ duration: 1500 }",
+			"1500",
+			".vel",
+			".25s",
+			"opacity",
+			"double",
+			"int",
+			"sõne",
+			"väärtus",
+			"Massiiv",
+			"muu",
+			"väärtus",
+			"ng#api-scanner",
+			"#api-scanner",
+			"scanner",
+			"scanned",
+			"double",
+			"int",
+			"switch",
+			"Vaata ka <a href=\"/vaartus-ohukoht1\">Ohuk",
+			"ohukoht",
+			"Integer",
+			"integer",
+			"Integer",
+			"double",
+			"row",
+			".",
+			"radio",
+			"ActionEvent",
+			"actioneve",
+			"textfield",
+			"<ActionEvent>",
+			"->",
+			"&gt",
+			"row",
+			"nel.panel-info\n					h5.panel-heading#ja",
+			"row",
+			".col-sm-3",
+			".panel.panel-info\n					h5.panel-heading#",
+			"circle",
+			"Circle",
+			"row",
+			"#javafx-kasutajaliides",
+			"kasutajaliides",
+			"javafx-node-yldinekasutamine",
+			"row",
+			"Node",
+			"w\n							.col-sm-3\n							.col-sm-9\n								pre\n									code ",
+			"joonis",
+			"hr\n						.row\n							.col-sm-3 \n							.col-sm-9\n								pre\n									code ",
+			"| ",
+			"RadioButton",
+			"strong Erilised meetodid",
+			"textfield",
+			"l-body\n						.row\n							.col-sm-4\n								img.img-responsiv",
+			"p Vt. ka <a target=\"_blank\" href=\"/javafx-node-yldinekasutamine\">Node üldine kasutamine</a>.",
+			"e\n									code\n						p Vt. ka <a",
+			"\n								pre\n									code\n						.row",
+			"strong Kasutamine\n						.row\n							.col-sm-3 Loo uus",
+			"x-node-yldinekasutamine\">Üldine kasutamine<",
+			"de-yldinekasutamine\">Üldine kasutamine</a>.\n				.panel.panel-info",
+			"l.panel-info\n					h5.panel-heading#javafx-",
+			"h5.panel-heading#javafx-layout-",
+			"Label l = new Label();",
+			"Loo uus",
+			"ng Kasutamine\n				.row\n					.col-sm-3",
+			"ol-sm-3\n						img(src",
+			"img(src",
+			"kasutajaliides"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"name=\"next\"",
+			"students"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/home/krister/code/javaCheatsheet/client/contents/hadaabi.jade",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7299,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2985,
+								2985
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 732.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/home/krister/code/javaCheatsheet/client/index.js",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 2391,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 360.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 30.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "javaCheatsheet.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"hadaa",
+				"client/contents/hadaabi.jade"
+			],
+			[
+				"aren",
+				"client/contents/arenduskeskkond.jade"
+			],
+			[
+				"kkk",
+				"client/contents/kkk.jade"
+			],
+			[
+				"scrolljs",
+				"client/Scroll.js"
+			],
+			[
+				"hadaabi",
+				"client/contents/hadaabi.jade"
+			],
+			[
+				"are",
+				"client/contents/arenduskeskkond.jade"
+			],
+			[
+				"indexless",
+				"client/index.less"
+			],
+			[
+				"conte",
+				"client/contents.jade"
+			],
+			[
+				"ette",
+				"ettevalmistus"
+			],
+			[
+				"content",
+				"client/contents.jade"
+			],
+			[
+				"arend",
+				"client/contents/arenduskeskkond.jade"
+			],
+			[
+				"intellij",
+				"client/contents/intellij.jade"
+			],
+			[
+				"contentjade",
+				"client/contents.jade"
+			],
+			[
+				"git",
+				"client/contents/git.jade"
+			],
+			[
+				"indeless",
+				"client/index.less"
+			],
+			[
+				"muutujad",
+				"client/contents/muutujad.jade"
+			],
+			[
+				"api",
+				"client/contents/javaAPI.jade"
+			],
+			[
+				"juh",
+				"client/contents/juhtimisstruktuurid.jade"
+			],
+			[
+				"muutuja",
+				"client/contents/muutujad.jade"
+			],
+			[
+				"sise",
+				"client/contents/sisendValjund.jade"
+			],
+			[
+				"indexjade",
+				"client/index.jade"
+			],
+			[
+				"indexjs",
+				"client/index.js"
+			],
+			[
+				"muutjade",
+				"client/contents/muutujad.jade"
+			],
+			[
+				"muutua",
+				"client/contents/muutujad.jade"
+			],
+			[
+				"juhtimi",
+				"client/contents/juhtimisstruktuurid.jade"
+			],
+			[
+				"muutja",
+				"client/contents/muutujad.jade"
+			],
+			[
+				"muutu",
+				"client/contents/muutujad.jade"
+			],
+			[
+				"juhti",
+				"client/contents/juhtimisstruktuurid.jade"
+			],
+			[
+				"juhtimis",
+				"client/contents/juhtimisstruktuurid.jade"
+			],
+			[
+				"muutujade",
+				"client/contents/muutujad.jade"
+			],
+			[
+				"inteljade",
+				"client/contents/intellij.jade"
+			],
+			[
+				"puudu",
+				"puudu"
+			],
+			[
+				"inte",
+				"client/contents/intellij.jade"
+			],
+			[
+				"javafx",
+				"client/contents/javaFX.jade"
+			],
+			[
+				"adminjade",
+				"client/admin.jade"
+			],
+			[
+				"style",
+				"client/style.less"
+			],
+			[
+				"transla",
+				"lib/Translate.js"
+			],
+			[
+				"routerjs",
+				"lib/router.js"
+			],
+			[
+				"userjade",
+				"client/user.jade"
+			],
+			[
+				"clientjade",
+				"client/admin.jade"
+			],
+			[
+				"sty",
+				"client/style.less"
+			],
+			[
+				"client",
+				"client/Client.js"
+			],
+			[
+				"adminjs",
+				"client/admin.js"
+			],
+			[
+				"clie",
+				"client/Client.js"
+			],
+			[
+				"layoutjs",
+				"client/layout.js"
+			],
+			[
+				"global",
+				"lib/Global.js"
+			],
+			[
+				"layoutjade",
+				"client/layout.jade"
+			],
+			[
+				"trans",
+				"lib/Translate.js"
+			],
+			[
+				"userjs",
+				"client/user.js"
+			],
+			[
+				"translate",
+				"lib/Translate.js"
+			],
+			[
+				"globa",
+				"lib/Global.js"
+			],
+			[
+				"layoutja",
+				"client/layout.jade"
+			],
+			[
+				"layout",
+				"client/layout.jade"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 501.0,
+		"last_filter": "toit",
+		"selected_items":
+		[
+			[
+				"toit",
+				"~/code/myLinux/config/sublime/projects/toitla.sublime-project"
+			],
+			[
+				"ch",
+				"~/code/myLinux/config/sublime/projects/chat-bubble.sublime-project"
+			],
+			[
+				"lin",
+				"~/code/myLinux/config/sublime/projects/myLinux.sublime-project"
+			],
+			[
+				"toi",
+				"~/code/myLinux/config/sublime/projects/toitla.sublime-project"
+			],
+			[
+				"java",
+				"~/code/myLinux/config/sublime/projects/javaCheatsheet.sublime-project"
+			],
+			[
+				"cheat",
+				"~/code/myLinux/cmd/javaCheatscheet.sublime-project"
+			],
+			[
+				"",
+				"~/Templates/homefood.sublime-project"
+			],
+			[
+				"kris",
+				"~/Templates/krister.sublime-project"
+			],
+			[
+				"ti",
+				"~/Templates/tickets.sublime-project"
+			]
+		],
+		"width": 381.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

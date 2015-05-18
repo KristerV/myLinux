@@ -6,6 +6,7 @@ getService () {
     case $1 in
         ti ) service="ting"            ; server="meteor" ;;
         gh ) service="ghost"           ; server="ghost"  ;;
+        to ) service="toitla"       ; server="toitla" ;;
         todev ) service="toitladev"    ; server="toitla" ;;
         tolive ) service="toitlalive"  ; server="toitla" ;;
         kr ) service="krister"         ; server="meteor" ;;
@@ -16,7 +17,7 @@ getService () {
         tick ) service="tickets"       ; server="meteor" ;;
         koos ) service="kooselu"       ; server="meteor" ;;
         lin ) service="myLinux";;
-        java ) service="javaCheatsheet" ;;
+        java ) service="javaCheatsheet"; server="itcollege" ;;
         javah ) service="javaHarjutused" ;;
     esac
 
@@ -25,9 +26,10 @@ getService () {
 
 getIP () {
     case $1 in
-        meteor ) ip="95.85.56.82" ;;
-        toitla ) ip="178.62.237.194" ;;
-        ghost  ) ip="188.226.162.53" ;;
+        meteor    ) ip="root@95.85.56.82" ;;
+        toitla    ) ip="root@178.62.237.194" ;;
+        ghost     ) ip="root@188.226.162.53" ;;
+        itcollege ) ip="krister@i200.itcollege.ee" ;;
     esac
 }
 
@@ -55,9 +57,9 @@ clone () {
         poll )                   cd $HOME/code && git clone git@github.com:KristerV/poll.git;;
         LunarDevs )              cd $HOME/code && git clone git@github.com:KristerV/LunarDevs.git;;
         tickets )                cd $HOME/code && git clone git@github.com:KristerV/tickets.git;;
-        javaCheatsheet )         cd $HOME/code && git clone git@github.com:KristerV/javaCheatsheet.git;;
         myLinux )                cd $HOME/code && git clone git@github.com:KristerV/myLinux.git;;
         kooselu )                cd $HOME/code && git clone git@bitbucket.org:kriv/kooselu.git;;
+        javaCheatsheet )         cd $HOME/code && git clone git@github.com:KristerV/javaCheatsheet.git;;
         javaHarjutused )         cd $HOME/code && git clone git@github.com:KristerV/javaHarjutused.git;;
         * ) echo "git not set up for $service"
     esac
@@ -68,7 +70,7 @@ clone () {
 s () {
     clear
     getService $1
-    ssh root@$ip
+    ssh $ip
 }
 
 # update
@@ -77,15 +79,15 @@ u () {
     getService $1
     echo "=== UPDATING $service ==="
     case $server in
-        meteor ) ssh root@$ip "cd /srv/$service/ && git checkout . && git pull && cd /srv/deploy_$service/ && mup deploy";;
+        meteor | itcollege ) ssh $ip "cd /srv/$service/ && git checkout . && git pull && cd /srv/deploy_$service/ && mup deploy";;
         toitla ) if [[ $service="toitlalive" ]];
                 then
-                    ssh root@$ip "bash -ic dep_live"
+                    ssh $ip "bash -ic dep_live"
                 else
-                    ssh root@$ip "bash -ic dep_dev"
+                    ssh $ip "bash -ic dep_dev"
                 fi ;;
-        ghost ) ssh root@$ip "service ghost stop && cd /var/www/ && wget http://ghost.org/zip/ghost-latest.zip && rm -rf ghost/core && unzip -uo ghost*.zip -d ghost && chown -R ghost:ghost ghost/* && cd /var/www/ghost && npm install --production && service ghost start";;
-        * ) echo "Service not updatable"; exit 1 ;;
+        ghost ) ssh $ip "service ghost stop && cd /var/www/ && wget http://ghost.org/zip/ghost-latest.zip && rm -rf ghost/core && unzip -uo ghost*.zip -d ghost && chown -R ghost:ghost ghost/* && cd /var/www/ghost && npm install --production && service ghost start";;
+        * ) echo "Service updating not configured" ;;
     esac
 
 }
@@ -96,12 +98,12 @@ b () {
     echo "=== BACKUP $server ==="
     mkdir -p mkdir $backup_dir/db_$server
     case $server in
-        meteor | toitla ) ssh root@$ip "mongodump -o /srv/dump/$(date +%F)/";
+        meteor | toitla ) ssh $ip "mongodump -o /srv/dump/$(date +%F)/";
                 mkdir $backup_dir/db_$server/$(date +%F);
-                scp -r root@$ip:/srv/dump/$(ssh root@$ip 'ls -t /srv/dump | head -1')/* $backup_dir/db_$server/$(date +%F);
+                scp -r $ip:/srv/dump/$(ssh $ip 'ls -t /srv/dump | head -1')/* $backup_dir/db_$server/$(date +%F);
                 ;;
         ghost ) mkdir $backup_dir/db_$server/$(date +%F);
-                scp root@$ip:/var/www/ghost/content/data/ghost.db $backup_dir/db_$server/$(date +%F);;
+                scp $ip:/var/www/ghost/content/data/ghost.db $backup_dir/db_$server/$(date +%F);;
         * ) echo "Service not updatable"; exit 1 ;;
     esac
 }
@@ -129,6 +131,7 @@ k () {
                                           lu     - lunardevs
                                           tick   - tickets
                                           java   - javaCheatsheet
+                                          javah  - javaHarjutused
                                           koos   - kooselu
                                           lin    - myLinux
 "
