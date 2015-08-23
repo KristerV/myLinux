@@ -161,15 +161,15 @@ sc () {
 
 bta () {
     echo "============= Build Toitla App (for android) ============="
-    mkdir /home/krister/build/ > /dev/null 2>&1
-    rm -rf /home/krister/build/android
-    rm -rf /home/krister/build/toitla-app.tar.gz
-    cd /home/krister/code/toitla-app/
-    meteor build /home/krister/build/ --server=app.toitla.com
-    cd /home/krister/build/android
+    mkdir ~/build/ > /dev/null 2>&1
+    rm -rf ~/build/android
+    rm -rf ~/build/toitla-app.tar.gz
+    cd ~/code/toitla-app/
+    meteor build ~/build/ --server=app.toitla.com
+    cd ~/build/android
     # keytool -genkey -alias your-app-name -keyalg RSA -keysize 2048 -validity 10000
     jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 unaligned.apk Toitla
-    /home/krister/.meteor/android_bundle/android-sdk/build-tools/20.0.0/zipalign 4 unaligned.apk production.apk
-    cp production.apk /home/krister/code/toitla-app/public/toitla.apk
+    ~/.meteor/android_bundle/android-sdk/build-tools/20.0.0/zipalign 4 unaligned.apk production.apk
+    cp production.apk ~/code/toitla-app/public/toitla.apk
     c toa
 }
