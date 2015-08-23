@@ -2,4 +2,5 @@
 dir=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 alias cdh="cd ~/code/homefood && clear && git status"
 alias ll="ls -lh"
+alias a="atom ."
 source $dir/kuti

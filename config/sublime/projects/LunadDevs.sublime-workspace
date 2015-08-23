@@ -69,10 +69,11 @@
 	],
 	"file_history":
 	[
+		"/home/krister/code/LunarDevs/client/index.jade",
+		"/home/krister/code/LunarDevs/client/frontpage/frontpage.jade",
 		"/home/krister/code/LunarDevs/client/frontpage/frontpage.less",
 		"/home/krister/code/LunarDevs/client/background/background.less",
 		"/home/krister/code/LunarDevs/client/background/background.html",
-		"/home/krister/code/LunarDevs/client/frontpage/frontpage.jade",
 		"/home/krister/code/LunarDevs/client/index.less",
 		"/home/krister/I200/java.itcollege.ee",
 		"/home/krister/I200/ettevalmistus",
@@ -99,6 +100,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"7.7",
 			"svg",
 			"30",
 			"svg",
@@ -225,8 +227,7 @@
 			"createTitle",
 			", obj",
 			"lib32",
-			"con",
-			"conky"
+			"con"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -299,6 +300,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"fronjade",
+				"client/frontpage/frontpage.jade"
+			],
 			[
 				".less",
 				"client/frontpage/frontpage.less"
@@ -393,16 +398,20 @@
 	"select_project":
 	{
 		"height": 501.0,
-		"last_filter": "chat",
+		"last_filter": "koo",
 		"selected_items":
 		[
 			[
-				"chat",
-				"~/code/myLinux/config/sublime/projects/chat-bubble.sublime-project"
+				"koo",
+				"~/code/myLinux/config/sublime/projects/koodikool.sublime-project"
 			],
 			[
 				"lin",
 				"~/code/myLinux/config/sublime/projects/myLinux.sublime-project"
+			],
+			[
+				"chat",
+				"~/code/myLinux/config/sublime/projects/chat-bubble.sublime-project"
 			],
 			[
 				"",
@@ -435,7 +444,7 @@
 	"show_minimap": false,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 185.0,
 	"status_bar_visible": true,
 	"template_settings":

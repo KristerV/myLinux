@@ -6,6 +6,7 @@
 	[
 		"Alignment",
 		"Auto Semi-Colon",
+		"Better CoffeeScript",
 		"ColorPicker",
 		"ExpandRegion",
 		"Focus File on Sidebar",
@@ -13,10 +14,13 @@
 		"GitGutter",
 		"Increment Selection",
 		"Jade",
+		"JSX",
 		"LESS",
 		"Meteor Snippets",
 		"Monokai Extended",
 		"Package Control",
+		"ReactJS",
+		"ReactJS Snippets",
 		"SideBarEnhancements",
 		"SublimeCodeIntel",
 		"WordHighlight"

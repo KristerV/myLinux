@@ -8,6 +8,18 @@
 				"observeChanges	Meteor: cursor.observeChanges(callbacks)"
 			],
 			[
+				"offl",
+				"offlineChats"
+			],
+			[
+				"on",
+				"onlineGuests"
+			],
+			[
+				"backgrou",
+				"background-color"
+			],
+			[
 				"fun",
 				"function〔keyword〕"
 			],
@@ -32,11 +44,11 @@
 	"buffers":
 	[
 		{
-			"file": "/home/krister/code/chat-bubble/README.md",
+			"file": "/home/krister/code/chat-bubble/demo/chatting.html",
 			"settings":
 			{
-				"buffer_size": 607,
-				"line_ending": "Windows"
+				"buffer_size": 507,
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -47,10 +59,14 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 72.0,
-		"last_filter": "",
+		"height": 172.0,
+		"last_filter": "html",
 		"selected_items":
 		[
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
 			[
 				"bash",
 				"Set Syntax: Shell Script (Bash)"
@@ -86,24 +102,37 @@
 	"expanded_folders":
 	[
 		"/home/krister/code/chat-bubble",
-		"/home/krister/code/chat-bubble/view",
-		"/home/krister/code/chatting"
+		"/home/krister/code/chat-bubble/demo",
+		"/home/krister/code/chat-bubble/package"
 	],
 	"file_history":
 	[
-		"/home/krister/code/chat-bubble/router.js",
-		"/home/krister/code/chat-bubble/view/chatBubbles.jade",
-		"/home/krister/code/chat-bubble/view/chatBubbles.js",
+		"/home/krister/code/chat-bubble/package/collections.js",
+		"/home/krister/code/chat-bubble/demo/chatting.html",
+		"/home/krister/code/javaCheatsheet/i200 kaugõppe materjalide ettekanne",
+		"/home/krister/code/javaCheatsheet/saeed-paper1",
+		"/home/krister/code/chat-bubble/README.md",
+		"/home/krister/code/chat-bubble/package/package.js",
+		"/home/krister/code/chat-bubble/package/chat-bubble-tests.js",
 		"/home/krister/code/chat-bubble/view/chatBubbles.less",
-		"/home/krister/code/chatting/chatting.js",
-		"/home/krister/code/chat-bubble/collections.js",
-		"/home/krister/code/chatting/chatting.css",
 		"/home/krister/code/chat-bubble/package.js",
+		"/home/krister/code/chat-bubble/view/chatBubbles.js",
+		"/home/krister/code/chat-bubble/router.js",
+		"/home/krister/code/chatting/chatting.js",
+		"/home/krister/code/chat-bubble/view/chatBubbles.jade",
 		"/home/krister/code/chatting/chatting.html",
+		"/home/krister/code/chatting/packages/chat-bubble/router.js",
+		"/home/krister/code/chat-bubble/ChatBubblesConfig.js",
+		"/home/krister/code/chat-bubble/methods.js",
+		"/home/krister/code/chatting/packages/chat-bubble/methods.js",
+		"/home/krister/code/chat-bubble/chat-bubble.js",
+		"/home/krister/code/chat-bubble/collections.js",
+		"/home/krister/code/chatting/chatBubblesConfig.js",
+		"/home/krister/code/chatting/packages/chat-bubble/view/chatBubbles.js",
+		"/home/krister/code/chat-bubble/ChatBubbleConfig.js",
+		"/home/krister/code/chatting/chatting.css",
 		"/home/krister/code/chatting/router.js",
 		"/home/krister/code/chat-bubble/view/chatBubble.jade",
-		"/home/krister/code/chat-bubble/README.md",
-		"/home/krister/code/chat-bubble/ChatBubbleConfig.js",
 		"/home/krister/code/chat-bubble/view/chatBubble.js",
 		"/home/krister/code/chatting/packages/chat-bubble/package.js",
 		"/home/krister/code/chatting/.meteor/versions",
@@ -142,6 +171,43 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"p",
+			"fragmen",
+			"blob",
+			"https://raw.githubusercontent.com/KristerV/meteor-chat-bubbles/master/readme/client.gif",
+			"github.com",
+			"call",
+			"(!ChatBubblesCollection.findOne({authorId: Meteor.userId(), archived: {$in: [null, fals",
+			".guest",
+			"guest",
+			"Meteor",
+			"subscribe",
+			"wait",
+			"roles",
+			"inser",
+			"update",
+			"ole.l",
+			"moment",
+			"sole.log()",
+			"shadow",
+			"in",
+			"roles",
+			"chatExists",
+			"1s",
+			"background-color",
+			".guest",
+			"oledDate",
+			"offlineChats",
+			"'statu",
+			"ChatBubblesConfig",
+			"ChatBubbles",
+			",0.4)",
+			"00FF00",
+			"00FF08",
+			"userStatus",
+			"85",
+			"2px",
+			" 50px",
 			"userId",
 			"7",
 			"c4c4c4",
@@ -232,44 +298,7 @@
 			"//",
 			"t = new int[]",
 			"t = ",
-			"t =",
-			"      ",
-			"\n",
-			"a=\"+a+\" b=\"+b",
-			"      a=",
-			"//",
-			" a=\"+a+\" b=\"+b,",
-			"   a=",
-			"());",
-			"   a=",
-			".;",
-			"   a=",
-			"a=",
-			"aatriks2.v1",
-			"ihtnemassiiv.v3",
-			".kymnelised.v1",
-			"./i200.maatriks2.v1",
-			"./i200.lihtnemassiiv.v3",
-			"./i200.kymnelised.v1",
-			"dtickets",
-			"\\n",
-			"<br>",
-			"e.l",
-			"answersCorrect",
-			":",
-			"answersCorrect",
-			"maxpo",
-			"macpoi",
-			"name=\"skip\"",
-			"le.lo",
-			"set('ques",
-			"Session.get('question')",
-			"session.get",
-			"answer_limit_reached",
-			"max",
-			"generateHash",
-			"form[name=",
-			"$()"
+			"t ="
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -294,25 +323,31 @@
 			[
 				{
 					"buffer": 0,
-					"file": "/home/krister/code/chat-bubble/README.md",
+					"file": "/home/krister/code/chat-bubble/demo/chatting.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 607,
+						"buffer_size": 507,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								70,
-								70
+								144,
+								144
+							],
+							[
+								169,
+								169
 							]
 						],
 						"settings":
 						{
 							"auto_complete": false,
-							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -373,8 +408,80 @@
 		"selected_items":
 		[
 			[
+				"readme",
+				"README.md"
+			],
+			[
+				"methods",
+				"chat-bubble/methods.js"
+			],
+			[
+				"chatcon",
+				"chat-bubble/ChatBubblesConfig.js"
+			],
+			[
+				"chabubbless",
+				"chat-bubble/view/chatBubbles.less"
+			],
+			[
+				"routerjs",
+				"chat-bubble/router.js"
+			],
+			[
+				"chatbubblesjade",
+				"chat-bubble/view/chatBubbles.jade"
+			],
+			[
+				"chatconf",
+				"chat-bubble/ChatBubblesConfig.js"
+			],
+			[
 				"chatbubbjs",
 				"chat-bubble/view/chatBubbles.js"
+			],
+			[
+				"chatbubbles",
+				"chat-bubble/view/chatBubbles.less"
+			],
+			[
+				"chatbubblejs",
+				"chat-bubble/view/chatBubbles.js"
+			],
+			[
+				"chaconf",
+				"chat-bubble/ChatBubblesConfig.js"
+			],
+			[
+				"collec",
+				"chat-bubble/collections.js"
+			],
+			[
+				"chatbubblesjs",
+				"chat-bubble/view/chatBubbles.js"
+			],
+			[
+				"config",
+				"chat-bubble/ChatBubblesConfig.js"
+			],
+			[
+				"router",
+				"chat-bubble/router.js"
+			],
+			[
+				"chatbujs",
+				"chat-bubble/view/chatBubbles.js"
+			],
+			[
+				"chatbuless",
+				"chat-bubble/view/chatBubbles.less"
+			],
+			[
+				"chabubblesjs",
+				"chat-bubble/view/chatBubbles.js"
+			],
+			[
+				"chatbujade",
+				"chat-bubble/view/chatBubbles.jade"
 			],
 			[
 				"chatbubbljade",
@@ -387,18 +494,6 @@
 			[
 				"chatless",
 				"chat-bubble/view/chatBubbles.less"
-			],
-			[
-				"chatbubblesjs",
-				"chat-bubble/view/chatBubbles.js"
-			],
-			[
-				"chatbuless",
-				"packages/chat-bubble/view/chatBubble.less"
-			],
-			[
-				"chatbujade",
-				"packages/chat-bubble/view/chatBubble.jade"
 			],
 			[
 				"indexless",
@@ -419,10 +514,6 @@
 			[
 				"transla",
 				"lib/Translate.js"
-			],
-			[
-				"routerjs",
-				"lib/router.js"
 			],
 			[
 				"userjade",
@@ -490,9 +581,17 @@
 	"select_project":
 	{
 		"height": 501.0,
-		"last_filter": "lu",
+		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"java",
+				"~/code/myLinux/config/sublime/projects/javaCheatsheet.sublime-project"
+			],
+			[
+				"to",
+				"~/code/myLinux/config/sublime/projects/toitla.sublime-project"
+			],
 			[
 				"lu",
 				"~/code/myLinux/config/sublime/projects/LunadDevs.sublime-project"

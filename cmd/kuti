@@ -4,9 +4,11 @@ backup_dir="$HOME/backups"
 
 getService () {
     case $1 in
+        dra ) service="draka_quality_control";;
         ti ) service="ting"            ; server="meteor" ;;
         gh ) service="ghost"           ; server="ghost"  ;;
-        to ) service="toitla"       ; server="toitla" ;;
+        to ) service="toitla"          ; server="toitla" ;;
+        toa ) service="toitla-app"      ; server="toitla" ;;
         todev ) service="toitladev"    ; server="toitla" ;;
         tolive ) service="toitlalive"  ; server="toitla" ;;
         kr ) service="krister"         ; server="meteor" ;;
@@ -50,6 +52,8 @@ clone () {
     case $service in
         ting )                   cd $HOME/code && git clone git@github.com:KristerV/ting.git;;
         ghost )                  echo "Can't clone Ghost, stupid!" ;;
+        draka_quality_control )  cd $HOME/code && git clone git@github.com:KristerV/draka_quality_control.git ;;
+        toitla-app )             cd $HOME/code && git clone git@bitbucket.org:kriv/toitla-app.git ;;
         toitladev | toitlalive ) cd $HOME/code && git clone git@bitbucket.org:kriv/toitla.git ;;
         krister )                cd $HOME/code && git clone git@github.com:KristerV/krister.git;;
         movieatmyplace )         cd $HOME/code && git clone git@github.com:KristerV/movieatmyplace.git;;
@@ -70,7 +74,7 @@ clone () {
 s () {
     clear
     getService $1
-    ssh $ip
+    ssh -t $ip "cd /srv/ ; bash"
 }
 
 # update
@@ -80,10 +84,14 @@ u () {
     echo "=== UPDATING $service ==="
     case $server in
         meteor | itcollege ) ssh $ip "cd /srv/$service/ && git checkout . && git pull && cd /srv/deploy_$service/ && mup deploy";;
-        toitla ) if [[ $service="toitlalive" ]];
-                then
+        toitla ) if [ "$service" == "toitlalive" ]; then
+                    echo "TOITLA LIVE"
                     ssh $ip "bash -ic dep_live"
+                elif [ "$service" == "toitla-app" ]; then
+                    echo "Toitla App"
+                    ssh $ip "bash -ic dep_app"
                 else
+                    echo "Toitla Dev"
                     ssh $ip "bash -ic dep_dev"
                 fi ;;
         ghost ) ssh $ip "service ghost stop && cd /var/www/ && wget http://ghost.org/zip/ghost-latest.zip && rm -rf ghost/core && unzip -uo ghost*.zip -d ghost && chown -R ghost:ghost ghost/* && cd /var/www/ghost && npm install --production && service ghost start";;
@@ -122,9 +130,11 @@ k () {
   ----------------    -----------------   -------------------
   gen - general       c     - cd          ti     - ting
   sc  - screencast    s     - ssh         gh     - ghost
-                      u     - update      todev  - toitladev
-                      b     - backup      tolive - toitlalive
-                      r     - restore     kr     - krister
+  bta - bld ttla andr u     - update      to     - toitla
+                      b     - backup      toa    - toitla-app
+                      r     - restore     todev  - toitladev
+                                          tolive - toitlalive
+                                          kr     - krister
                                           mo     - movienight
                                           ko     - koodikool
                                           po     - poll
@@ -147,4 +157,19 @@ gen () {
 
 sc () {
     $dir/kuti_screencast.sh
+}
+
+bta () {
+    echo "============= Build Toitla App (for android) ============="
+    mkdir /home/krister/build/ > /dev/null 2>&1
+    rm -rf /home/krister/build/android
+    rm -rf /home/krister/build/toitla-app.tar.gz
+    cd /home/krister/code/toitla-app/
+    meteor build /home/krister/build/ --server=app.toitla.com
+    cd /home/krister/build/android
+    # keytool -genkey -alias your-app-name -keyalg RSA -keysize 2048 -validity 10000
+    jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 unaligned.apk Toitla
+    /home/krister/.meteor/android_bundle/android-sdk/build-tools/20.0.0/zipalign 4 unaligned.apk production.apk
+    cp production.apk /home/krister/code/toitla-app/public/toitla.apk
+    c toa
 }

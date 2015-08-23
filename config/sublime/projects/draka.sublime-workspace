@@ -1,0 +1,987 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"box",
+				"box-sizing"
+			],
+			[
+				"auto",
+				"autoValue"
+			],
+			[
+				"defa",
+				"defaultValue"
+			],
+			[
+				"se",
+				"serverTime"
+			],
+			[
+				"ProductMap",
+				"ProductMapCollection〔variable〕"
+			],
+			[
+				"up",
+				"updateField"
+			],
+			[
+				"Pro",
+				"ProductMap"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"max",
+				"maxAnswers"
+			],
+			[
+				"co",
+				"correctAnswers"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/home/krister/code/draka_quality_control/server/importData.js",
+			"settings":
+			{
+				"buffer_size": 913,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/home/krister/code/draka_quality_control/notes",
+			"settings":
+			{
+				"buffer_size": 211,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 72.0,
+		"last_filter": "javascr",
+		"selected_items":
+		[
+			[
+				"javascr",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"javas",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"bash",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 593.0
+	},
+	"console":
+	{
+		"height": 179.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2deb499853c4371624f5a07e27c334aa' + 'bf8c4e67d14fb0525ba4f89698a6d7e1'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/krister/code/draka_quality_control",
+		"/home/krister/code/draka_quality_control/client",
+		"/home/krister/code/draka_quality_control/client/productDetails",
+		"/home/krister/code/draka_quality_control/lib",
+		"/home/krister/code/draka_quality_control/lib/collections"
+	],
+	"file_history":
+	[
+		"/home/krister/code/draka_quality_control/client/productDetails/productDetails.jade",
+		"/home/krister/code/draka_quality_control/both/settings.js",
+		"/home/krister/code/draka_quality_control/client/autoform.js",
+		"/home/krister/code/draka_quality_control/client/productDetails/productDetails.js",
+		"/home/krister/code/draka_quality_control/lib/router.js",
+		"/home/krister/code/draka_quality_control/lib/collections/productsCollection.js",
+		"/home/krister/code/draka_quality_control/.meteor/local/build/programs/server/npm/ddp/node_modules/faye-websocket/examples/autobahn_client.js",
+		"/home/krister/code/draka_quality_control/client/elements.less",
+		"/home/krister/code/draka_quality_control/client/productMap/productMap.js",
+		"/home/krister/code/draka_quality_control/client/productsList/productsList.jade",
+		"/home/krister/code/draka_quality_control/.meteor/local/build/programs/web.browser/app/client/productsList/productsList.js",
+		"/home/krister/code/draka_quality_control/lib/collections/productMapCollection.js",
+		"/home/krister/code/draka_quality_control/.meteor/local/build/programs/server/app/lib/collections/productsCollection.js",
+		"/home/krister/code/draka_quality_control/client/productMap/productMapItem.jade",
+		"/home/krister/code/draka_quality_control/client/productMap/productMap.jade",
+		"/home/krister/code/draka_quality_control/server/importData.js",
+		"/home/krister/code/draka_quality_control/client/settings.js",
+		"/home/krister/Downloads/export-1-06-2015 (5).csv",
+		"/home/krister/code/draka_quality_control/server/exportCSV.js",
+		"/home/krister/code/draka_quality_control/packages/meteor-export-csv/README.md",
+		"/home/krister/code/draka_quality_control/packages/meteor-export-csv/package.js",
+		"/home/krister/code/draka_quality_control/packages/meteor-export-csv/lib/exportcsv.js",
+		"/home/krister/code/draka_quality_control/client/productsList/productsList.js",
+		"/home/krister/Downloads/export-1-06-2015 (3).csv",
+		"/home/krister/Downloads/export-1-06-2015 (2).csv",
+		"/home/krister/Downloads/export-1-06-2015.csv",
+		"/home/krister/Downloads/export-1-06-2015 (1).csv",
+		"/home/krister/Downloads/11434970939459port-1-06-2015.csv",
+		"/home/krister/Downloads/2015-06-22T13-57-16+03-00.csv",
+		"/home/krister/code/draka_quality_control/notes",
+		"/home/krister/code/draka_quality_control/private/andmed.txt",
+		"/home/krister/code/draka_quality_control/server/methods.js",
+		"/home/krister/code/draka_quality_control/server/timer.js",
+		"/home/krister/code/draka_quality_control/client/productsList/productsList.less",
+		"/home/krister/code/draka_quality_control/lib/accounts.js",
+		"/home/krister/Downloads/tooted_tootmisse.txt",
+		"/home/krister/code/draka_quality_control/private/file.txt",
+		"/home/krister/code/draka_quality_control/testandmed.js",
+		"/home/krister/code/draka_quality_control/server/testData.js",
+		"/home/krister/code/draka_quality_control/server/testDataMethod.js",
+		"/home/krister/code/draka_quality_control/testandmed.csv",
+		"/home/krister/Downloads/window.dat",
+		"/home/krister/code/draka_quality_control/client/index.less",
+		"/home/krister/code/draka_quality_control/client/index.jade",
+		"/home/krister/code/draka_quality_control/client/accounts.js",
+		"/home/krister/Desktop/P",
+		"/home/krister/code/draka_quality_control/client/index.js",
+		"/home/krister/code/draka_quality_control/client/elements/buttonToProductsList.jade",
+		"/home/krister/code/draka_quality_control/client/elements/buttonToProductMap.jade",
+		"/home/krister/code/draka_quality_control/client/elements/buttonToProductMap.js",
+		"/home/krister/code/draka_quality_control/client/elements/buttonToProductsList.js",
+		"/home/krister/code/draka_quality_control/client/productMap/productMap.less",
+		"/home/krister/code/draka_quality_control/client/head.jade",
+		"/home/krister/code/draka_quality_control/client/sAlert.js",
+		"/home/krister/code/draka_quality_control/public/testandmed.csv",
+		"/home/krister/code/draka_quality_control/client/notify.js",
+		"/home/krister/Downloads/andmed_kristerile.csv",
+		"/home/krister/code/draka_quality_control/lib/collections/products.js",
+		"/home/krister/code/draka_quality_control/lib/collections/productMap.js",
+		"/home/krister/code/draka_quality_control/lib/collections",
+		"/home/krister/code/draka_quality_control/client/layout.jade",
+		"/home/krister/code/myLinux/cmd/kuti",
+		"/home/krister/I200/puudu",
+		"/home/krister/code/myLinux/cmd/kuti_screencast.sh"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"<open folders>,-.meteor/*",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"ole.l",
+			"le.lo",
+			"doc.$set.measurements",
+			"passed",
+			"decimal: true\n",
+			"\n		decimal: true",
+			"decimal",
+			"number",
+			"decimal",
+			"double",
+			",\n",
+			"le.lo",
+			"type=\"hidden\"",
+			"disabled=true",
+			"afQuickField",
+			"HESI",
+			"{{",
+			"kindel",
+			"l-class=\"col-sm-3\"\n									              input-col-class=\"col-sm-9\"",
+			"value:",
+			"Object",
+			"ole.l",
+			"HESI",
+			"le.log",
+			"list",
+			"le.lo",
+			"console.log",
+			"le.lo",
+			"fields",
+			"Fields",
+			"fields",
+			"Fields",
+			"fields",
+			"one",
+			"a1",
+			"resistance",
+			"select2",
+			"null",
+			",",
+			"ii",
+			"delimiter",
+			"','",
+			"No data",
+			"data.toString(\"utf8\")",
+			"dataFromCollection[i][key]",
+			"I20150622",
+			"code",
+			"ole.lo",
+			"sa",
+			"table",
+			"line[0]",
+			"important",
+			"\" +",
+			"   	",
+			"\" +",
+			"   	",
+			".log",
+			"console.log",
+			"le.lo",
+			"importCSV",
+			"ProductMapCollection.insert(",
+			"ProductMapCollection.insert({code: \"000000001000071653\", description: \"TACK - 95 SÜDAMIKUGA\"})",
+			"ProductMapCollection.insert({code: \"000000001000071985\", description: \"SAT 4,02±0,01 MM\"})",
+			"ProductMapCollection.insert({code: \"000000001000071986\", description: \"SAT 3,26±0,01 MM\"})",
+			"ProductMapCollection.insert({code: \"KERNEL_APO\", description: \"KERNEL APO CONFIGURABLE MATERIAL\"})",
+			"items",
+			"insert",
+			"000000000020022382\", description: \"AXMK-PLUS 4G35 AN 1KV K500",
+			"000000000020022380\", description: \"AXMK-PLUS 4G25 AR 1KV K500",
+			"000000000020022380\", description: \"AXMK-PLUS 4G25 RM 1KV K500",
+			"000000000020022380\", description: \"AXMK-PLUS 4G25 AN 1KV K500",
+			"000000000020022380",
+			"SE-N1XE-AR PLUS F2 4G25 K500",
+			"^",
+			"led=tru",
+			"productCode",
+			"obj",
+			".resistance",
+			"le.lo",
+			"cooldownTime",
+			"autoValue",
+			"le.lo",
+			"console",
+			"mapId",
+			"result",
+			"doc.resi",
+			"bg-danger",
+			"input-bg-red{{/if}}",
+			"input-bg-red{{/if}} ",
+			"}} {{#if $not",
+			"{#if $not",
+			"}}input-bg-red{{/if}}",
+			"()",
+			"Number",
+			"bg-red",
+			"name=\"",
+			"name=",
+			"ptional: function(){return this.status != 'Katsetamisele'",
+			"afQuickField",
+			": {",
+			" 'Katsetamisele'}",
+			"{$exists: true, $nin: [null, \"\"]",
+			"ne:null",
+			"start",
+			"le.log",
+			"toDate",
+			"valueOf",
+			"now",
+			"checProductsTimers",
+			"Ootel",
+			"filter",
+			"type=\"button\" class=\"btn btn-material-grey\"",
+			"button",
+			"btn-cyan",
+			"info",
+			"default",
+			"buttonToProductMap",
+			"substract",
+			"7",
+			"console",
+			"duration",
+			"sole.lo",
+			"le.lo",
+			"orderNumber",
+			"productDescription",
+			"timesync",
+			"serverti",
+			"productDescriptionId"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"name=\"next\"",
+			"students"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": false,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/home/krister/code/draka_quality_control/server/importData.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 913,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								187,
+								187
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/home/krister/code/draka_quality_control/notes",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 211,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								211,
+								211
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 30.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 361.0
+	},
+	"pinned_build_system": "",
+	"project": "draka.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"server/",
+				"server/importData.js"
+			],
+			[
+				"proddetajade",
+				"client/productDetails/productDetails.jade"
+			],
+			[
+				"settings",
+				"both/settings.js"
+			],
+			[
+				"router",
+				"lib/router.js"
+			],
+			[
+				"produdetajs",
+				"client/productDetails/productDetails.js"
+			],
+			[
+				"proddefajs",
+				".meteor/local/build/programs/server/npm/ddp/node_modules/faye-websocket/examples/autobahn_client.js"
+			],
+			[
+				"proddea",
+				"client/productDetails/productDetails.jade"
+			],
+			[
+				"prodcol",
+				"lib/collections/productsCollection.js"
+			],
+			[
+				"auto",
+				"client/autoform.js"
+			],
+			[
+				"detailsjade",
+				"client/productDetails/productDetails.jade"
+			],
+			[
+				"producoll",
+				"lib/collections/productsCollection.js"
+			],
+			[
+				"autofo",
+				"client/autoform.js"
+			],
+			[
+				"elemen",
+				"client/elements.less"
+			],
+			[
+				"procoll",
+				"lib/collections/productsCollection.js"
+			],
+			[
+				"prodlisjade",
+				"client/productsList/productsList.jade"
+			],
+			[
+				"proddetajs",
+				"client/productDetails/productDetails.js"
+			],
+			[
+				"prodetajade",
+				"client/productDetails/productDetails.jade"
+			],
+			[
+				"prodlistjade",
+				"client/productsList/productsList.jade"
+			],
+			[
+				"prodetailjs",
+				"client/productDetails/productDetails.js"
+			],
+			[
+				"pocolle",
+				"lib/collections/productsCollection.js"
+			],
+			[
+				"proddetailja",
+				"client/productDetails/productDetails.jade"
+			],
+			[
+				"promapcoll",
+				"lib/collections/productMapCollection.js"
+			],
+			[
+				"procolljs",
+				"lib/collections/productsCollection.js"
+			],
+			[
+				"polistcoll",
+				".meteor/local/build/programs/server/app/lib/collections/productsCollection.js"
+			],
+			[
+				"maplistjs",
+				".meteor/local/build/programs/web.browser/app/client/productsList/productsList.js"
+			],
+			[
+				"produmapjs",
+				"client/productMap/productMap.js"
+			],
+			[
+				"routerjs",
+				"lib/router.js"
+			],
+			[
+				"promapjade",
+				"client/productMap/productMap.jade"
+			],
+			[
+				"itemjade",
+				"client/productMap/productMapItem.jade"
+			],
+			[
+				"import",
+				"server/importData.js"
+			],
+			[
+				"prodmapcoll",
+				"lib/collections/productMapCollection.js"
+			],
+			[
+				".less",
+				"client/elements.less"
+			],
+			[
+				"prodjade",
+				"client/productsList/productsList.jade"
+			],
+			[
+				"export",
+				"server/exportCSV.js"
+			],
+			[
+				"prodlisjs",
+				"client/productsList/productsList.js"
+			],
+			[
+				"prolistjs",
+				"client/productsList/productsList.js"
+			],
+			[
+				"produlistjs",
+				"client/productsList/productsList.js"
+			],
+			[
+				"produclisjade",
+				"client/productsList/productsList.jade"
+			],
+			[
+				"prodlistjs",
+				"client/productsList/productsList.js"
+			],
+			[
+				"prolistjade",
+				"client/productsList/productsList.jade"
+			],
+			[
+				"prodmapjade",
+				"client/productMap/productMap.jade"
+			],
+			[
+				"prodcollec",
+				"lib/collections/productsCollection.js"
+			],
+			[
+				"produmapjade",
+				"client/productMap/productMap.jade"
+			],
+			[
+				"prmajs",
+				"client/productMap/productMap.js"
+			],
+			[
+				"prmapjade",
+				"client/productMap/productMap.jade"
+			],
+			[
+				"methods",
+				"server/methods.js"
+			],
+			[
+				"producscoll",
+				"lib/collections/productsCollection.js"
+			],
+			[
+				"prolisjade",
+				"client/productsList/productsList.jade"
+			],
+			[
+				"accoun",
+				"lib/accounts.js"
+			],
+			[
+				"produlistjade",
+				"client/productsList/productsList.jade"
+			],
+			[
+				"notes",
+				"notes"
+			],
+			[
+				"andmed",
+				"private/andmed.txt"
+			],
+			[
+				"timerjs",
+				"server/timer.js"
+			],
+			[
+				"filetxt",
+				"private/file.txt"
+			],
+			[
+				"prodmapjs",
+				"client/productMap/productMap.js"
+			],
+			[
+				"detailjs",
+				"client/productDetails/productDetails.js"
+			],
+			[
+				"prodcoll",
+				"lib/collections/productsCollection.js"
+			],
+			[
+				"productlistjade",
+				"client/productsList/productsList.jade"
+			],
+			[
+				"produlis",
+				"client/productsList/productsList.js"
+			],
+			[
+				"producmapcoll",
+				"lib/collections/productMapCollection.js"
+			],
+			[
+				"produccoll",
+				"lib/collections/productsCollection.js"
+			],
+			[
+				"produlisjade",
+				"client/productsList/productsList.jade"
+			],
+			[
+				"productcoll",
+				"lib/collections/productsCollection.js"
+			],
+			[
+				"prodjs",
+				"client/productsList/productsList.js"
+			],
+			[
+				"autoform",
+				"client/autoform.js"
+			],
+			[
+				"elemeless",
+				"client/elements.less"
+			],
+			[
+				"proddetail",
+				"client/productDetails/productDetails.jade"
+			],
+			[
+				"productjs",
+				"lib/collections/productsCollection.js"
+			],
+			[
+				"autoformjs",
+				"client/autoform.js"
+			],
+			[
+				"elemelss",
+				"client/elements.less"
+			],
+			[
+				"prolists",
+				"client/productsList/productsList.js"
+			],
+			[
+				"promapcol",
+				"lib/collections/productMapCollection.js"
+			],
+			[
+				"proddetailjade",
+				"client/productDetails/productDetails.jade"
+			],
+			[
+				"produjade",
+				"client/productsList/productsList.jade"
+			],
+			[
+				"producolljs",
+				"lib/collections/productsCollection.js"
+			],
+			[
+				"prodliscoll",
+				"client/productsList/productsList.less"
+			],
+			[
+				"prolisjs",
+				"client/productsList/productsList.js"
+			],
+			[
+				"produdetailsjade",
+				"client/productDetails/productDetails.jade"
+			],
+			[
+				"produlisjs",
+				"client/productsList/productsList.js"
+			],
+			[
+				"eleless",
+				"client/elements.less"
+			],
+			[
+				"produlijade",
+				"client/productsList/productsList.jade"
+			],
+			[
+				"prodlijs",
+				"client/productsList/productsList.js"
+			],
+			[
+				"prmapcoll",
+				"lib/collections/productMapCollection.js"
+			],
+			[
+				"pordumapjs",
+				"client/productMap/productMap.js"
+			],
+			[
+				"prodliless",
+				"client/productsList/productsList.less"
+			],
+			[
+				"prlisjade",
+				"client/productsList/productsList.jade"
+			],
+			[
+				"prmap",
+				"client/productMap/productMap.jade"
+			],
+			[
+				"prlisjs",
+				"client/productsList/productsList.js"
+			],
+			[
+				"mapcoll",
+				"lib/collections/productMapCollection.js"
+			],
+			[
+				"pmapcoll",
+				"lib/collections/productMapCollection.js"
+			],
+			[
+				"prcoll",
+				"lib/collections/productsCollection.js"
+			],
+			[
+				"adminjade",
+				"client/admin.jade"
+			],
+			[
+				"style",
+				"client/style.less"
+			],
+			[
+				"transla",
+				"lib/Translate.js"
+			],
+			[
+				"userjade",
+				"client/user.jade"
+			],
+			[
+				"clientjade",
+				"client/admin.jade"
+			],
+			[
+				"sty",
+				"client/style.less"
+			],
+			[
+				"client",
+				"client/Client.js"
+			],
+			[
+				"adminjs",
+				"client/admin.js"
+			],
+			[
+				"clie",
+				"client/Client.js"
+			],
+			[
+				"layoutjs",
+				"client/layout.js"
+			],
+			[
+				"global",
+				"lib/Global.js"
+			],
+			[
+				"layoutjade",
+				"client/layout.jade"
+			],
+			[
+				"trans",
+				"lib/Translate.js"
+			],
+			[
+				"userjs",
+				"client/user.js"
+			],
+			[
+				"translate",
+				"lib/Translate.js"
+			],
+			[
+				"globa",
+				"lib/Global.js"
+			],
+			[
+				"layoutja",
+				"client/layout.jade"
+			],
+			[
+				"layout",
+				"client/layout.jade"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 501.0,
+		"last_filter": "ting",
+		"selected_items":
+		[
+			[
+				"ting",
+				"~/code/myLinux/config/sublime/projects/ting.sublime-project"
+			],
+			[
+				"toitla",
+				"~/code/myLinux/config/sublime/projects/toitla.sublime-project"
+			],
+			[
+				"toa",
+				"~/code/myLinux/config/sublime/projects/toitla-app.sublime-project"
+			],
+			[
+				"",
+				"~/code/myLinux/config/sublime/projects/toitla.sublime-project"
+			],
+			[
+				"toit",
+				"~/code/myLinux/config/sublime/projects/toitla.sublime-project"
+			],
+			[
+				"toita",
+				"~/code/myLinux/config/sublime/projects/toitla-app.sublime-project"
+			],
+			[
+				"app",
+				"~/code/myLinux/config/sublime/projects/toitla-app.sublime-project"
+			],
+			[
+				"chatt",
+				"~/code/myLinux/config/sublime/projects/chat-bubble.sublime-project"
+			],
+			[
+				"to",
+				"~/code/myLinux/config/sublime/projects/toitla.sublime-project"
+			],
+			[
+				"java",
+				"~/code/myLinux/config/sublime/projects/javaCheatsheet.sublime-project"
+			],
+			[
+				"kris",
+				"~/Templates/krister.sublime-project"
+			],
+			[
+				"ti",
+				"~/Templates/tickets.sublime-project"
+			]
+		],
+		"width": 381.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 204.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

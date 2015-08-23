@@ -15,6 +15,14 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "/home/krister/code/meteor-c3/template.js",
+			"settings":
+			{
+				"buffer_size": 645,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -69,11 +77,23 @@
 	],
 	"file_history":
 	[
+		"/home/krister/Desktop/toitlaSchema",
+		"/home/krister/code/meteor-c3/template.html",
+		"/home/krister/code/ting/client/controller/modules/chat.js",
+		"/home/krister/code/ting/server/publish.js",
+		"/home/krister/Desktop/CFeedback",
+		"/home/krister/code/ting/client/controller/menu.js",
+		"/home/krister/code/ting/client/view/modules/chat.jade",
+		"/home/krister/code/ting/client/view/menuItem.jade",
+		"/home/krister/code/ting/server/allow.js",
+		"/home/krister/code/ting/client/controller/modules/bulkemail.js",
+		"/home/krister/code/ting/server/methods.js",
+		"/home/krister/code/ting/server/mailgun.js",
+		"/home/krister/Desktop/RändT",
+		"/home/krister/code/ting/client/controller/modules/wiki.js",
+		"/home/krister/code/ting/client/controller/index.js",
 		"/home/krister/code/ting/client/controller/menuItem.js",
 		"/home/krister/code/ting/client/controller/module.js",
-		"/home/krister/code/ting/server/mailgun.js",
-		"/home/krister/code/ting/server/methods.js",
-		"/home/krister/code/ting/client/controller/index.js",
 		"/home/krister/code/ting/client/view/module.jade",
 		"/home/krister/I200/puudu",
 		"/home/krister/code/myLinux/cmd/kuti",
@@ -97,6 +117,18 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"safestring",
+			"peopleList",
+			"findOne",
+			"},\n",
+			"**",
+			"p>",
+			"\n",
+			"sendTestEmail",
+			"h2>",
+			"le.lo",
+			"window",
+			"admin",
 			"+module",
 			"module",
 			"myLinux",
@@ -212,14 +244,7 @@
 			"createTitle",
 			", obj",
 			"lib32",
-			"con",
-			"conky",
-			"drop-down",
-			">",
-			">&l",
-			"><",
-			"\"<",
-			"<"
+			"con"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -239,8 +264,38 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "/home/krister/code/meteor-c3/template.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 645,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								645,
+								645
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -292,6 +347,26 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"menuitemjade",
+				"client/view/menuItem.jade"
+			],
+			[
+				"chatjs",
+				"client/controller/modules/chat.js"
+			],
+			[
+				"allow",
+				"server/allow.js"
+			],
+			[
+				"chatjade",
+				"client/view/modules/chat.jade"
+			],
+			[
+				"wikijs",
+				"client/controller/modules/wiki.js"
+			],
 			[
 				"menuitemjs",
 				"client/controller/menuItem.js"
@@ -382,12 +457,24 @@
 	"select_project":
 	{
 		"height": 501.0,
-		"last_filter": "",
+		"last_filter": "java",
 		"selected_items":
 		[
 			[
 				"java",
-				"~/code/myLinux/cmd/javaCheatscheet.sublime-project"
+				"~/code/myLinux/config/sublime/projects/javaCheatsheet.sublime-project"
+			],
+			[
+				"linux",
+				"~/code/myLinux/config/sublime/projects/myLinux.sublime-project"
+			],
+			[
+				"ting",
+				"~/code/myLinux/config/sublime/projects/ting.sublime-project"
+			],
+			[
+				"koodi",
+				"~/code/myLinux/config/sublime/projects/koodikool.sublime-project"
 			],
 			[
 				"",
@@ -420,7 +507,7 @@
 	"show_minimap": false,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": false,
+	"side_bar_visible": true,
 	"side_bar_width": 180.0,
 	"status_bar_visible": true,
 	"template_settings":

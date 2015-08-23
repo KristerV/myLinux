@@ -15,14 +15,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "/home/krister/code/myLinux/cmd/kuti",
-			"settings":
-			{
-				"buffer_size": 5519,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -74,8 +66,9 @@
 	],
 	"file_history":
 	[
-		"/home/krister/I200/puudu",
 		"/home/krister/code/myLinux/cmd/kuti",
+		"/home/krister/code/myLinux/cmd/bashrc",
+		"/home/krister/I200/puudu",
 		"/home/krister/code/myLinux/cmd/kuti_screencast.sh"
 	],
 	"find":
@@ -96,6 +89,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"toitlaApp",
+			"echo",
+			"toitladev",
+			":",
 			"ip",
 			"root@$ip",
 			"myLinux",
@@ -238,39 +235,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "/home/krister/code/myLinux/cmd/kuti",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5519,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								273,
-								273
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -404,9 +370,25 @@
 	"select_project":
 	{
 		"height": 501.0,
-		"last_filter": "to",
+		"last_filter": "koos",
 		"selected_items":
 		[
+			[
+				"koos",
+				"~/code/myLinux/config/sublime/projects/koodikool.sublime-project"
+			],
+			[
+				"toa",
+				"~/code/myLinux/config/sublime/projects/toitla-app.sublime-project"
+			],
+			[
+				"app",
+				"~/code/myLinux/config/sublime/projects/toitla-app.sublime-project"
+			],
+			[
+				"chatt",
+				"~/code/myLinux/config/sublime/projects/chat-bubble.sublime-project"
+			],
 			[
 				"to",
 				"~/code/myLinux/config/sublime/projects/toitla.sublime-project"
