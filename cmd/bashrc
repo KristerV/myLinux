@@ -2,7 +2,6 @@
 # source ~/code/myLinux/cmd/kuti
 # dir=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd ) ## old
 dir=`dirname $0`
-echo "$dir"
 alias ll="ls -lh"
 alias a="atom ."
 source $dir/kuti
