@@ -21,6 +21,8 @@ getService () {
         lin ) service="myLinux";;
         java ) service="javaCheatsheet"; server="itcollege" ;;
         javah ) service="javaHarjutused" ;;
+        gw ) service="GuaanaWeb" ;;
+        ga ) service="GuaanaAdmin" ;;
     esac
 
     getIP $server
@@ -65,6 +67,8 @@ clone () {
         kooselu )                cd $HOME/code && git clone git@bitbucket.org:kriv/kooselu.git;;
         javaCheatsheet )         cd $HOME/code && git clone git@github.com:KristerV/javaCheatsheet.git;;
         javaHarjutused )         cd $HOME/code && git clone git@github.com:KristerV/javaHarjutused.git;;
+        GuaanaWeb )              cd $HOME/code && git clone git@github.com:Guaana/GuaanaWeb.git;;
+        GuaanaAdmin )              cd $HOME/code && git clone git@github.com:Guaana/GuaanaAdmin.git;;
         * ) echo "git not set up for $service"
     esac
 
@@ -119,8 +123,11 @@ b () {
 # restore
 r () {
     getService $1
-    echo "== RESTORE $service"
-    mongorestore -h localhost --port 3001 --db meteor --drop $backup_dir/db_$server/$(ls -t $backup_dir/db_$server/ | head -1)/$service/
+    echo "=== RESTORE $service ==="
+    case $service in
+      GuaanaWeb ) cd ~/code/GuaanaWeb/ && sh .devdump ;;
+      GuaanaAdmin ) cd ~/code/GuaanaAdmin/ && sh .devdump ;;
+      * ) mongorestore -h localhost --port 3001 --db meteor --drop $backup_dir/db_$server/$(ls -t $backup_dir/db_$server/ | head -1)/$service/ ;;
 }
 
 # display options
@@ -144,6 +151,8 @@ k () {
                                           javah  - javaHarjutused
                                           koos   - kooselu
                                           lin    - myLinux
+                                          gw     - GuaanaWeb
+                                          ga     - GuaanaAdmin
 "
 }
 
