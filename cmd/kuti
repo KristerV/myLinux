@@ -125,9 +125,10 @@ r () {
     getService $1
     echo "=== RESTORE $service ==="
     case $service in
-      GuaanaWeb ) cd ~/code/GuaanaWeb/ && sh .devdump ;;
-      GuaanaAdmin ) cd ~/code/GuaanaAdmin/ && sh .devdump ;;
-      * ) mongorestore -h localhost --port 3001 --db meteor --drop $backup_dir/db_$server/$(ls -t $backup_dir/db_$server/ | head -1)/$service/ ;;
+        GuaanaWeb ) cd ~/code/GuaanaWeb/ && sh .devdump ;;
+        GuaanaAdmin ) cd ~/code/GuaanaAdmin/ && sh .devdump ;;
+        * ) mongorestore -h localhost --port 3001 --db meteor --drop $backup_dir/db_$server/$(ls -t $backup_dir/db_$server/ | head -1)/$service/ ;;
+    esac
 }
 
 # display options
@@ -157,7 +158,12 @@ k () {
 }
 
 m () {
-    meteor
+    if [ -f .devrun ]; then
+        echo "[[ run .devrun ]]"
+        sh .devrun
+    else
+        meteor
+    fi
 }
 
 gen () {
