@@ -7,9 +7,7 @@ getService () {
         dra ) service="draka_quality_control";;
         ti ) service="ting"            ; server="meteor" ;;
         gh ) service="ghost"           ; server="ghost"  ;;
-        to ) service="toitla"          ; server="toitla" ;;
-        toa ) service="toitla-app"      ; server="toitla" ;;
-        todev ) service="toitladev"    ; server="toitla" ;;
+        to ) service="toitladev"       ; server="toitla" ;;
         tolive ) service="toitlalive"  ; server="toitla" ;;
         kr ) service="krister"         ; server="meteor" ;;
         mo ) service="movieatmyplace"  ; server="meteor" ;;
@@ -31,7 +29,7 @@ getService () {
 getIP () {
     case $1 in
         meteor    ) ip="root@95.85.56.82" ;;
-        toitla    ) ip="root@178.62.237.194" ;;
+        toitla    ) ip="root@188.226.252.230" ;;
         ghost     ) ip="root@188.226.162.53" ;;
         itcollege ) ip="krister@i200.itcollege.ee" ;;
     esac
@@ -55,7 +53,6 @@ clone () {
         ting )                   cd $HOME/code && git clone git@github.com:KristerV/ting.git;;
         ghost )                  echo "Can't clone Ghost, stupid!" ;;
         draka_quality_control )  cd $HOME/code && git clone git@github.com:KristerV/draka_quality_control.git ;;
-        toitla-app )             cd $HOME/code && git clone git@bitbucket.org:kriv/toitla-app.git ;;
         toitladev | toitlalive ) cd $HOME/code && git clone git@bitbucket.org:kriv/toitla.git ;;
         krister )                cd $HOME/code && git clone git@github.com:KristerV/krister.git;;
         movieatmyplace )         cd $HOME/code && git clone git@github.com:KristerV/movieatmyplace.git;;
@@ -88,16 +85,7 @@ u () {
     echo "=== UPDATING $service ==="
     case $server in
         meteor | itcollege ) ssh $ip "cd /srv/$service/ && git checkout . && git pull && cd /srv/deploy_$service/ && mup deploy";;
-        toitla ) if [ "$service" == "toitlalive" ]; then
-                    echo "TOITLA LIVE"
-                    ssh $ip "bash -ic dep_live"
-                elif [ "$service" == "toitla-app" ]; then
-                    echo "Toitla App"
-                    ssh $ip "bash -ic dep_app"
-                else
-                    echo "Toitla Dev"
-                    ssh $ip "bash -ic dep_dev"
-                fi ;;
+        toitla ) ssh $ip "cd /srv/$service/ && git checkout . && git pull && cd /srv/deploy_$service/ && mupx deploy";;
         ghost ) ssh $ip "service ghost stop && cd /var/www/ && wget http://ghost.org/zip/ghost-latest.zip && rm -rf ghost/core && unzip -uo ghost*.zip -d ghost && chown -R ghost:ghost ghost/* && cd /var/www/ghost && npm install --production && service ghost start";;
         * ) echo "Service updating not configured" ;;
     esac
