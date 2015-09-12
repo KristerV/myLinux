@@ -37,7 +37,12 @@ getIP () {
 
 c () {
     getService $1
-    d=~/code/$service
+    name=$service
+    if  [[ $name == toitla* ]];
+    then
+        name="toitla"
+    fi
+    d=~/code/$name
     if [ ! -d "$d" ]; then
         clone
     fi
