@@ -4,4 +4,6 @@
 dir=`dirname $0`
 alias ll="ls -lh"
 alias a="atom ."
+alias w="/usr/local/bin/wstorm ."
+alias i="/Applications/IntelliJ\ IDEA\ 14\ CE.app/Contents/MacOS/idea ."
 source $dir/kuti
