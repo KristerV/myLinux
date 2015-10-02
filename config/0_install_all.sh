@@ -1,66 +1,52 @@
+#!/bin/bash
+echo "if errors run dos2unix 0_install_all.sh"
 yaourt -Syu
-sudo mhwd-kernel -i linux313
-reboot
-yaourt -Syu
-yaourt -S --noconfirm git
 yaourt -S --noconfirm chromium
-yaourt -S --noconfirm dropbox
-yaourt -S --noconfirm sublime-text-dev
-yaourt -S --noconfirm openssh
+yaourt -S --noconfirm atom-editor-bin
 yaourt -S --noconfirm vim
-yaourt -S --noconfirm make
 yaourt -S --noconfirm inkskape
-yaourt -S --noconfirm nodejs
 yaourt -S --noconfirm skype
-yaourt -S --noconfirm gnome-terminal
 yaourt -S --noconfirm chromium-pepper-flash
+yaourt -S --noconfirm zsh
+
+echo " --------------------- oh-my-ZSH --------------------- "
+sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+chsh -s /bin/zsh
+rm ~/.zshrc
+ln -s ~/code/myLinux/config/zshrc ~/.zshrc
+
+echo " --------------------- remove PC speaker beep --------------------- "
+sudo rmmod pcspkr
+echo "blacklist pcspkr" > sudo /etc/modprobe.d/nobeep.conf
+
+echo " --------------------- Kuti Scriptid --------------------- "
+echo "source ~/code/myLinux/cmd/kuti" >> ~/.bashrc
+
+echo " --------------------- Meteor --------------------- "
 curl https://install.meteor.com/ | sh
 
-## ID Kaart - https://wiki.archlinux.org/index.php/Estonian_ID-card
-yaourt -S --noconfirm pcsclite esteidcerts esteidfirefoxplugin esteidpkcs11loader qesteidutil qdigidoc
-systemctl enable pcscd.socket
+echo " --------------------- Enable middle button scroll --------------------- "
+sudo cp ./20-thinkpad.conf /etc/X11/xorg.conf.d/
 
-## Conky
+echo " --------------------- Conky --------------------- "
 yaourt -S --noconfirm conky-lua
 rm /home/krister/.conkyrc
-ln -s /home/krister/Dropbox/Linux/ManjaroXfce_config/conkyrc /home/krister/.conkyrc
-sudo cp /home/krister/Dropbox/Linux/ManjaroXfce_config/Antipasto.otf /usr/share/fonts/
+ln -s code/myLinux/config/conkyrc ~/.conkyrc
+sudo cp ./Antipasto.otf /usr/share/fonts/
 
-## Aliases
-echo 'alias k="/home/krister/Dropbox/Linux/cmd/kuti"' >> ~/.bashrc
-# echo 'alias cdo="cd /srv/ois/;clear;pwd;git status"' >> ~/.bashrc
-# echo 'alias cdm="cd /home/krister/code/movieatmyplace;clear;pwd;git status"' >> ~/.bashrc
+echo " --------------------- ID Kaart --------------------- "
+# yaourt -S --noconfirm pcsclite esteidcerts esteidfirefoxplugin esteidpkcs11loader qesteidutil qdigidoc
+# systemctl enable pcscd.socket
 
-## Xfce settings
-rm /home/krister/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml
-ln -s /home/krister/Dropbox/Linux/ManjaroXfce_config/xfce4-keyboard-shortcuts.xml /home/krister/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml
-rm /home/krister/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml
-ln -s /home/krister/Dropbox/Linux/ManjaroXfce_config/xfce4-panel.xml /home/krister/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml
+echo " --------------------- Xfce settings --------------------- "
+# rm /home/krister/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml
+# ln -s ~/code/myLinux//xfce4-keyboard-shortcuts.xml /home/krister/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml
+# rm /home/krister/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml
+# ln -s ./xfce4-panel.xml /home/krister/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml
+# to restore defaults run
+# xfce4-panel --quit ; pkill xfconfd ; rm -rf ~/.config/xfce4/panel ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml ; xfce4-panel;
 
-## Oblogout
-yaourt -S --noconfirm oblogout
-sudo rm /etc/oblogout.conf
-sudo ln -s /home/krister/Dropbox/Linux/ManjaroXfce_config/oblogout.conf /etc/oblogout.conf
-
-## LXDM
-sudo pacman -S lxdm
-sudo systemctl enable lxdm.service -f
-
-## Devilspie2
-yaourt -S --noconfirm devilspie2
-ln -s /home/krister/Dropbox/Linux/ManjaroXfce_config/gridOf9.lua /home/krister/.config/devilspie2/gridOf9.lua
-## Add to autostart from session manager
-
-## Sublime text
-yaourt -S --noconfirm sublime-text-dev
-rm /home/krister/.config/sublime-text-3/Packages/User/Default\ \(Linux\).sublime-keymap
-rm /home/krister/.config/sublime-text-3/Packages/User/Preferences.sublime-settings
-ln -s /home/krister/Dropbox/Linux/ManjaroXfce_config/Default\ \(Linux\).sublime-keymap /home/krister/.config/sublime-text-3/Packages/User/Default\ \(Linux\).sublime-keymap
-ln -s /home/krister/Dropbox/Linux/ManjaroXfce_config/Preferences.sublime-settings /home/krister/.config/sublime-text-3/Packages/User/Preferences.sublime-settings
-ln -s /home/krister/Dropbox/Linux/ManjaroXfce_config/semicolon.sublime-macro /home/krister/.config/sublime-text-3/Packages/User/semicolon.sublime-macro
-ln -s /home/krister/Dropbox/Linux/ManjaroXfce_config/unfoldfunction.sublime-macro /home/krister/.config/sublime-text-3/Packages/User/unfoldfunction.sublime-macro
-# https://sublime.wbond.net/installation
-# Monokai Extended
+echo "please reboot for changes to take effect - tegelt ka"
 
 ## EXTRA
 # Chromium needs to disable hardware acceleration
