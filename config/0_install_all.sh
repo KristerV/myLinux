@@ -9,6 +9,10 @@ yaourt -S --noconfirm skype
 yaourt -S --noconfirm chromium-pepper-flash
 yaourt -S --noconfirm zsh
 
+echo " --------------------- keybindings (volume) --------------------- "
+ln -s ~/code/myLinux/config/xinitrc ~/.xinitrc
+ln -s ~/code/myLinux/config/xprofile ~/.xprofile
+
 echo " --------------------- oh-my-ZSH --------------------- "
 sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 chsh -s /bin/zsh
