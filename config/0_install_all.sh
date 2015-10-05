@@ -23,8 +23,14 @@ echo " --------------------- remove PC speaker beep --------------------- "
 sudo rmmod pcspkr
 echo "blacklist pcspkr" > sudo /etc/modprobe.d/nobeep.conf
 
+# echo " --------------------- keep time up to date --------------------- "
+# timedatectl set-ntp true
+
 echo " --------------------- Kuti Scriptid --------------------- "
 echo "source ~/code/myLinux/cmd/kuti" >> ~/.bashrc
+
+echo " --------------------- yaourt conf --------------------- "
+ln -s ~/code/myLinux/config/yaourtrc ~/.yaourtrc
 
 echo " --------------------- Meteor --------------------- "
 curl https://install.meteor.com/ | sh
