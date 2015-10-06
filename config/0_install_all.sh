@@ -10,7 +10,7 @@ yaourt -S --noconfirm chromium-pepper-flash
 yaourt -S --noconfirm zsh
 
 echo " --------------------- keybindings (volume) --------------------- "
-ln -s ~/code/myLinux/config/xinitrc ~/.xinitrc
+ln -s ~/code/myLinux/config/xbindkeysrc ~/.xbindkeysrc
 ln -s ~/code/myLinux/config/xprofile ~/.xprofile
 
 echo " --------------------- oh-my-ZSH --------------------- "
