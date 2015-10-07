@@ -8,6 +8,7 @@ yaourt -S --noconfirm inkskape
 yaourt -S --noconfirm skype
 yaourt -S --noconfirm chromium-pepper-flash
 yaourt -S --noconfirm zsh
+yaourt -S --noconfirm ffcast
 
 echo " --------------------- keybindings (volume) --------------------- "
 ln -s ~/code/myLinux/config/xbindkeysrc ~/.xbindkeysrc
