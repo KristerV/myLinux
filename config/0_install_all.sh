@@ -33,6 +33,13 @@ echo "source ~/code/myLinux/cmd/kuti" >> ~/.bashrc
 echo " --------------------- yaourt conf --------------------- "
 ln -s ~/code/myLinux/config/yaourtrc ~/.yaourtrc
 
+echo " --------------------- install gromit --------------------- "
+yaourt -S --noconfirm xf86-input-wacom
+cd ~/code
+git clone git@github.com:altercation/arch-packages.git
+cd arch-packages/gromit-mpx-git/
+makepkg -sri
+
 echo " --------------------- Meteor --------------------- "
 curl https://install.meteor.com/ | sh
 
