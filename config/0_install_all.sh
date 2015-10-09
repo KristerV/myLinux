@@ -39,6 +39,7 @@ cd ~/code
 git clone git@github.com:altercation/arch-packages.git
 cd arch-packages/gromit-mpx-git/
 makepkg -sri
+ln -s ~/code/myLinux/config/gromit-mpx.cfg /etc/gromit-mpx/gromit-mpx.cfg
 
 echo " --------------------- Meteor --------------------- "
 curl https://install.meteor.com/ | sh
