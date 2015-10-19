@@ -9,6 +9,7 @@ yaourt -S --noconfirm skype
 yaourt -S --noconfirm chromium-pepper-flash
 yaourt -S --noconfirm zsh
 yaourt -S --noconfirm ffcast
+yaourt -S --noconfirm file-roller
 
 echo " --------------------- keybindings (volume) --------------------- "
 ln -s ~/code/myLinux/config/xbindkeysrc ~/.xbindkeysrc
