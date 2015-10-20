@@ -133,7 +133,7 @@ k () {
   gen - general       c     - cd          ti     - ting
   sc  - screencast    s     - ssh         gh     - ghost
   bta - bld ttla andr u     - update      to     - toitla
-                      b     - backup      toa    - toitla-app
+  ks  - screen guide  b     - backup      toa    - toitla-app
                       r     - restore     todev  - toitladev
                                           tolive - toitlalive
                                           kr     - krister
@@ -148,6 +148,36 @@ k () {
                                           lin    - myLinux
                                           gw     - GuaanaWeb
                                           ga     - GuaanaAdmin
+"
+}
+
+ks () {
+    echo "
+  ^A ?                       help
+
+  screen -S foo              create screen named foo
+  screen -x foo              connect to screen named foo
+  screen -r                  attach again to window
+  screen -DR                 list of detached screens
+
+  ^A c                       new window
+  ^A ^D                      detach from current window
+  ^A A                       rename current window
+  ^A k                       kill current window
+  ^A N                       show name and nr of current window
+
+  ^A \"                       list of all windows
+  ^A 0                       go to window 0
+  ^A n                       go to next window
+  ^A p                       go to previous window
+  ^A ^A                      switch to last used window
+  ^A -                       switch to the blank window
+
+  ^A S                       split screen horizontally
+  ^A |                       split screen vertically
+  ^A ^I or ^A TAB            change splitted part
+  ^A Q                       kill all regions but current
+  ^A X                       kill current region
 "
 }
 

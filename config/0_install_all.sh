@@ -31,6 +31,10 @@ echo "blacklist pcspkr" > sudo /etc/modprobe.d/nobeep.conf
 echo " --------------------- Kuti Scriptid --------------------- "
 echo "source ~/code/myLinux/cmd/kuti" >> ~/.bashrc
 
+echo " --------------------- screen setup --------------------- "
+yaourt -S --noconfirm screen
+ln -s ~/code/myLinux/config/screenrc ~/.screenrc
+
 echo " --------------------- yaourt conf --------------------- "
 ln -s ~/code/myLinux/config/yaourtrc ~/.yaourtrc
 
