@@ -5,4 +5,4 @@ dir=`dirname $0`
 alias ll="ls -lh"
 alias a="atom ."
 source $dir/kuti
-[[ $TERM != "screen" ]] && exec screen -q
+# [[ $TERM != "screen" ]] && exec screen -q

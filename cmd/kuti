@@ -20,6 +20,7 @@ getService () {
         lin ) service="myLinux";;
         java ) service="javaCheatsheet"; server="itcollege" ;;
         javah ) service="javaHarjutused" ;;
+        javap ) service="javaProjektid" ;;
         gw ) service="GuaanaWeb" ;;
         ga ) service="GuaanaAdmin" ;;
     esac
@@ -70,6 +71,7 @@ clone () {
         kooselu )                cd $HOME/code && git clone git@bitbucket.org:kriv/kooselu.git;;
         javaCheatsheet )         cd $HOME/code && git clone git@github.com:KristerV/javaCheatsheet.git;;
         javaHarjutused )         cd $HOME/code && git clone git@github.com:KristerV/javaHarjutused.git;;
+        javaProjektid )          cd $HOME/code && git clone git@github.com:KristerV/javaProjektid.git;;
         GuaanaWeb )              cd $HOME/code && git clone git@github.com:Guaana/GuaanaWeb.git;;
         GuaanaAdmin )              cd $HOME/code && git clone git@github.com:Guaana/GuaanaAdmin.git;;
         * ) echo "git not set up for $service"
