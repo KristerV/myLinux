@@ -12,7 +12,7 @@ getService () {
         tolive ) service="toitlalive"  ; server="toitla" ;;
         kr ) service="krister"         ; server="meteor" ;;
         mo ) service="movieatmyplace"  ; server="meteor" ;;
-        ko ) service="koodikool"       ; server="meteor" ;;
+        kood ) service="koodikool"       ; server="meteor" ;;
         po ) service="poll"            ; server="meteor" ;;
         lu ) service="LunarDevs"       ; server="meteor" ;;
         tick ) service="tickets"       ; server="meteor" ;;
@@ -63,9 +63,9 @@ clone () {
         toitladev | toitlalive ) cd $HOME/code && git clone git@bitbucket.org:kriv/toitla.git ;;
         krister )                cd $HOME/code && git clone git@github.com:KristerV/krister.git;;
         movieatmyplace )         cd $HOME/code && git clone git@github.com:KristerV/movieatmyplace.git;;
-        koodikool )              cd $HOME/code && git clone git@github.com:KristerV/koodikool.git;;
+        koodikool )              cd $HOME/code && git clone git@bitbucket.org:kriv/koodikool.git;;
         poll )                   cd $HOME/code && git clone git@github.com:KristerV/poll.git;;
-        LunarDevs )              cd $HOME/code && git clone git@github.com:KristerV/LunarDevs.git;;
+        LunarDevs )              cd $HOME/code && git clone git@bitbucket.org:kriv/lunardevs.git;;
         tickets )                cd $HOME/code && git clone git@github.com:KristerV/tickets.git;;
         myLinux )                cd $HOME/code && git clone git@github.com:KristerV/myLinux.git;;
         kooselu )                cd $HOME/code && git clone git@bitbucket.org:kriv/kooselu.git;;
