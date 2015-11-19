@@ -9,6 +9,7 @@ getService () {
         ti ) service="ting"            ; server="meteor" ;;
         gh ) service="ghost"           ; server="ghost"  ;;
         to ) service="toitladev"       ; server="toitla" ;;
+        tod ) service="toitla-docs"    ;;
         tolive ) service="toitlalive"  ; server="toitla" ;;
         kr ) service="krister"         ; server="meteor" ;;
         mo ) service="movieatmyplace"  ; server="meteor" ;;
@@ -40,7 +41,7 @@ getIP () {
 c () {
     getService $1
     name=$service
-    if  [[ $name == toitla* ]];
+    if  [[ $name != toitla-docs && $name == toitla* ]];
     then
         name="toitla"
     fi
@@ -61,6 +62,7 @@ clone () {
         ghost )                  echo "Can't clone Ghost, stupid!" ;;
         draka_quality_control )  cd $HOME/code && git clone git@github.com:KristerV/draka_quality_control.git ;;
         toitladev | toitlalive ) cd $HOME/code && git clone git@bitbucket.org:kriv/toitla.git ;;
+        toitla-docs)             cd $HOME/code && git clone git@github.com:hnslnts/toitla-docs.git ;;
         krister )                cd $HOME/code && git clone git@github.com:KristerV/krister.git;;
         movieatmyplace )         cd $HOME/code && git clone git@github.com:KristerV/movieatmyplace.git;;
         koodikool )              cd $HOME/code && git clone git@bitbucket.org:kriv/koodikool.git;;
@@ -106,7 +108,7 @@ b () {
     echo "=== BACKUP $server ==="
     mkdir -p mkdir $backup_dir/db_$server
     case $server in
-        meteor | toitla ) ssh $ip "mongodump -o /srv/dump/$(date +%F)/";
+        meteor ) ssh $ip "mongodump -o /srv/dump/$(date +%F)/";
                 mkdir $backup_dir/db_$server/$(date +%F);
                 scp -r $ip:/srv/dump/$(ssh $ip 'ls -t /srv/dump | head -1')/* $backup_dir/db_$server/$(date +%F);
                 ;;
