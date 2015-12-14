@@ -6,24 +6,24 @@ backup_dir="$HOME/backups"
 getService () {
     case $1 in
         dra ) service="draka_quality_control";;
-        ti ) service="ting"            ; server="meteor" ;;
-        gh ) service="ghost"           ; server="ghost"  ;;
-        to ) service="toitladev"       ; server="toitla" ;;
-        tod ) service="toitla-docs"    ;;
-        tolive ) service="toitlalive"  ; server="toitla" ;;
-        kr ) service="krister"         ; server="meteor" ;;
-        mo ) service="movieatmyplace"  ; server="meteor" ;;
+        ti ) service="ting"              ; server="meteor" ;;
+        gh ) service="ghost"             ; server="ghost"  ;;
+        to | todev ) service="toitladev" ; server="toitla" ;;
+        tod ) service="toitla-docs"      ;;
+        tolive ) service="toitlalive"    ; server="toitla" ;;
+        kr ) service="krister"           ; server="meteor" ;;
+        mo ) service="movieatmyplace"    ; server="meteor" ;;
         kood ) service="koodikool"       ; server="meteor" ;;
-        po ) service="poll"            ; server="meteor" ;;
-        lu ) service="LunarDevs"       ; server="meteor" ;;
-        tick ) service="tickets"       ; server="meteor" ;;
-        koos ) service="kooselu"       ; server="meteor" ;;
-        lin ) service="myLinux";;
-        java ) service="javaCheatsheet"; server="itcollege" ;;
+        po ) service="poll"              ; server="meteor" ;;
+        lu ) service="LunarDevs"         ; server="meteor" ;;
+        tick ) service="tickets"         ; server="meteor" ;;
+        koos ) service="kooselu"         ; server="meteor" ;;
+        lin ) service="myLinux"          ;;
+        java ) service="javaCheatsheet"  ; server="itcollege" ;;
         javah ) service="javaHarjutused" ;;
-        javap ) service="javaProjektid" ;;
-        gw ) service="GuaanaWeb" ;;
-        ga ) service="GuaanaAdmin" ;;
+        javap ) service="javaProjektid"  ;;
+        gw ) service="GuaanaWeb"         ;;
+        ga ) service="GuaanaAdmin"       ;;
     esac
 
     getIP $server
@@ -215,4 +215,9 @@ bta () {
     ~/.meteor/android_bundle/android-sdk/build-tools/20.0.0/zipalign 4 unaligned.apk production.apk
     cp production.apk ~/code/toitla-app/public/toitla.apk
     c toa
+}
+
+futurecommit () {
+    date=$(date -d "+$2 days" +%Y-%m-%dT%H:%M:%S%z)
+    GIT_AUTHOR_DATE="$date" GIT_COMMITTER_DATE="$date" git commit -m "$1"
 }
