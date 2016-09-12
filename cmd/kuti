@@ -9,10 +9,12 @@ getService () {
         ti ) service="ting"              ; server="meteor" ;;
         gh ) service="ghost"             ; server="ghost"  ;;
         to | todev ) service="toitladev" ; server="toitla" ;;
-        tod ) service="toitla-docs"      ;;
+        tos ) service="toitlaSpice"      ; server="spice"  ;;
         tolive ) service="toitlalive"    ; server="toitla" ;;
         kr ) service="krister"           ; server="meteor" ;;
+        chat ) service="chat-api-app"    ; server="meteor" ;;
         mo ) service="movieatmyplace"    ; server="meteor" ;;
+        ma ) service="markdownsites"     ; server="";;
         kood ) service="koodikool"       ; server="meteor" ;;
         po ) service="poll"              ; server="meteor" ;;
         lu ) service="LunarDevs"         ; server="meteor" ;;
@@ -32,16 +34,17 @@ getService () {
 getIP () {
     case $1 in
         meteor    ) ip="root@95.85.56.82" ;;
-        toitla    ) ip="root@188.226.252.230" ;;
+        toitla    ) ip="root@178.62.220.180" ;;
         ghost     ) ip="root@188.226.162.53" ;;
         itcollege ) ip="krister@i200.itcollege.ee" ;;
+        spice     ) ip="root@178.62.100.238" ;;
     esac
 }
 
 c () {
     getService $1
     name=$service
-    if  [[ $name != toitla-docs && $name == toitla* ]];
+    if  [[ $name == toitla* ]];
     then
         name="toitla"
     fi
@@ -61,10 +64,11 @@ clone () {
         ting )                   cd $HOME/code && git clone git@github.com:KristerV/ting.git;;
         ghost )                  echo "Can't clone Ghost, stupid!" ;;
         draka_quality_control )  cd $HOME/code && git clone git@github.com:KristerV/draka_quality_control.git ;;
-        toitladev | toitlalive ) cd $HOME/code && git clone git@bitbucket.org:kriv/toitla.git ;;
-        toitla-docs)             cd $HOME/code && git clone git@github.com:hnslnts/toitla-docs.git ;;
+        toitladev | toitlalive ) cd $HOME/code && git clone git@github.com:KristerV/toitla.git ;;
         krister )                cd $HOME/code && git clone git@github.com:KristerV/krister.git;;
+        chat )                   cd $HOME/code && git clone git@github.com:KristerV/chat-api-app.git;;
         movieatmyplace )         cd $HOME/code && git clone git@github.com:KristerV/movieatmyplace.git;;
+        markdownsites )          cd $HOME/code && git clone git@github.com:KristerV/markdownsites.git;;
         koodikool )              cd $HOME/code && git clone git@bitbucket.org:kriv/koodikool.git;;
         poll )                   cd $HOME/code && git clone git@github.com:KristerV/poll.git;;
         LunarDevs )              cd $HOME/code && git clone git@bitbucket.org:kriv/lunardevs.git;;
@@ -190,7 +194,7 @@ m () {
         echo "[[ run .devrun ]]"
         sh .devrun
     else
-        meteor
+        meteor run --settings settings.json
     fi
 }
 
