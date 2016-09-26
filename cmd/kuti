@@ -116,9 +116,13 @@ b () {
                 mkdir $backup_dir/db_$server/$(date +%F);
                 scp -r $ip:/srv/dump/$(ssh $ip 'ls -t /srv/dump | head -1')/* $backup_dir/db_$server/$(date +%F);
                 ;;
+	toitla ) ssh $ip "docker exec mongodb mongodump -d toitlalive -o /var/backups/$(date +%F)/ && mkdir /srv/dump/$(date +%F) && docker cp /srv/dump/$(date +%F) mongodb:/var/backups/$(date +%F)/";
+                mkdir $backup_dir/db_$server/$(date +%F);
+                scp -r $ip:/srv/dump/$(ssh $ip 'ls -t /srv/dump | head -1')/* $backup_dir/db_$server/$(date +%F);
+                ;;
         ghost ) mkdir $backup_dir/db_$server/$(date +%F);
                 scp $ip:/var/www/ghost/content/data/ghost.db $backup_dir/db_$server/$(date +%F);;
-        * ) echo "Service not updatable"; exit 1 ;;
+        * ) echo "Service not updatable: $server"; exit 1 ;;
     esac
 }
 
