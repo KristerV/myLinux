@@ -5,7 +5,7 @@ function confirm {
         then
             notify-send "ERROR: $(tail -1 ~/.tmp/error.txt)"
         else
-            notify-send -t 1000 $1
+            notify-send -t 3000 $1
     fi
 }
 
