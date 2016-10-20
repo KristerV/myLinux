@@ -4,5 +4,6 @@
 dir=`dirname $0`
 alias ll="ls -lh"
 alias a="atom ."
+alias s="subl3 ."
 source $dir/kuti
-# [[ $TERM != "screen" ]] && exec screen -q
+ssh-add ~/.ssh/id_rsa &> /dev/null

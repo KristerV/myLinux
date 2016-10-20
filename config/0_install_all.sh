@@ -9,8 +9,16 @@ yaourt -S --noconfirm sublime-text-dev
 yaourt -S --noconfirm thefuck
 
 echo " --------------------- keybindings (volume) --------------------- "
-ln -s ~/code/myLinux/config/xbindkeysrc ~/.xbindkeysrc
-ln -s ~/code/myLinux/config/xprofile ~/.xprofile
+
+# https://wiki.archlinux.org/index.php/PulseAudio#Keyboard_volume_control
+## map these to the keyboard
+# sh -c "pactl set-sink-mute 0 false ; pactl set-sink-volume 0 +5%"
+# sh -c "pactl set-sink-mute 0 false ; pactl set-sink-volume 0 -5%"
+# pactl set-sink-mute 0 toggle
+
+## Ei tööta
+# ln -s ~/code/myLinux/config/xbindkeysrc ~/.xbindkeysrc
+# ln -s ~/code/myLinux/config/xprofile ~/.xprofile
 
 echo " --------------------- oh-my-ZSH --------------------- "
 sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"

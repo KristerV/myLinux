@@ -32,7 +32,8 @@ function rec720pulse {
     getdatetime
     #ffmpeg -f alsa -i pulse -acodec pcm_s16le -f x11grab -s `xdpyinfo | grep 'dimensions:'|awk '{print $2}'` -r 25 -i :0.0 -strict -2 screencast_$datetime.mp4 2> ~/.tmp/error.txt
     #ffmpeg -f alsa -i pulse -acodec pcm_s16le -f x11grab -s `xdpyinfo | grep 'dimensions:'|awk '{print $2}'` -r 25 -i :0.0 screencast_$datetime.mkv 2> ~/.tmp/error.txt
-    ffmpeg -f alsa -i pulse -acodec pcm_s16le -f x11grab -s `xdpyinfo | grep 'dimensions:'|awk '{print $2}'` -r 25 -i :0.0 -b 50000k -minrate 20000k -maxrate 80000k -strict -2 -b:a 320k -vcodec mpeg4 Videos/screencast_$datetime.mp4 > ~/.screencast.log
+    ## quality ffmpeg -f alsa -i pulse -acodec pcm_s16le -f x11grab -s `xdpyinfo | grep 'dimensions:'|awk '{print $2}'` -r 25 -i :0.0 -b 50000k -minrate 20000k -maxrate 80000k -strict -2 -b:a 320k -vcodec mpeg4 Videos/screencast_$datetime.mp4 > ~/.screencast.log
+    ffmpeg -f alsa -i pulse -acodec pcm_s16le -f x11grab -s `xdpyinfo | grep 'dimensions:'|awk '{print $2}'` -r 25 -i :0.0 -b 8000k -minrate 3000k -maxrate 12000k -strict -2 -b:a 320k -vcodec mpeg4 Videos/screencast_$datetime.mp4 > ~/.screencast.log
 }
 
 function killrec {

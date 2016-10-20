@@ -86,7 +86,7 @@ clone () {
 }
 
 # ssh
-s () {
+ss () {
     clear
     getService $1
     ssh -t $ip "cd /srv/ ; bash"
