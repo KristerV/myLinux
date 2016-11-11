@@ -57,6 +57,7 @@ curl https://install.meteor.com/ | sh
 
 echo " --------------------- Vim Distribution --------------------- "
 curl http://j.mp/spf13-vim3 -L -o - | sh
+ln -s ~/code/myLinux/config/vimrc.local ~/.vimrc.local
 
 echo " --------------------- Enable middle button scroll --------------------- "
 cd ~/code/myLinux/config/
