@@ -100,7 +100,7 @@ u () {
     case $server in
         meteor | itcollege ) ssh $ip "cd /srv/$service/ && git checkout . && git pull && cd /srv/deploy_$service/ && mup deploy";;
         toitla ) ssh $ip "cd /srv/$service/ && git checkout . && git pull && cd /srv/deploy_$service/ && mupx deploy";;
-        ghost ) ssh $ip "service ghost stop && cd /var/www/ && wget http://ghost.org/zip/ghost-latest.zip && rm -rf ghost/core && unzip -uo ghost*.zip -d ghost && chown -R ghost:ghost ghost/* && cd /var/www/ghost && npm install --production && service ghost start";;
+        ghost ) ssh $ip "sh /var/www/upgrade.sh";;
         * ) echo "Service updating not configured" ;;
     esac
 
@@ -198,7 +198,7 @@ m () {
         echo "[[ run .devrun ]]"
         sh .devrun
     else
-        meteor run --settings settings.json
+        /usr/local/bin/meteor run --settings settings.json
     fi
 }
 

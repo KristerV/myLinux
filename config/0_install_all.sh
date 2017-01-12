@@ -63,6 +63,9 @@ echo " --------------------- Enable middle button scroll --------------------- "
 cd ~/code/myLinux/config/
 sudo cp ./20-thinkpad.conf /etc/X11/xorg.conf.d/
 
+echo " --------------------- Set time syncing on --------------------- "
+timedatectl set-ntp true
+
 echo " --------------------- Conky --------------------- "
 yaourt -S --noconfirm conky-lua-archers
 rm /home/krister/.conkyrc
