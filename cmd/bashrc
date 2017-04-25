@@ -3,7 +3,6 @@
 # dir=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd ) ## old
 dir=`dirname $0`
 alias ll="ls -lh"
-alias a="atom ."
 alias s="subl3 ."
 source $dir/kuti
 ssh-add ~/.ssh/id_rsa &> /dev/null

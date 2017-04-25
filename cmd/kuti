@@ -3,163 +3,13 @@
 dir=`dirname $0`
 backup_dir="$HOME/backups"
 
-getService () {
-    case $1 in
-        dra ) service="draka_quality_control";;
-        ti ) service="ting"              ; server="meteor" ;;
-        gh ) service="ghost"             ; server="ghost"  ;;
-        to | todev ) service="toitladev" ; server="toitla" ;;
-        tos ) service="toitlaSpice"      ; server="spice"  ;;
-        tolive ) service="toitlalive"    ; server="toitla" ;;
-        kr ) service="krister"           ; server="meteor" ;;
-        chat ) service="chat-api-app"    ; server="meteor" ;;
-        mo ) service="movieatmyplace"    ; server="meteor" ;;
-        ma ) service="markdownsites"     ; server="";;
-        kood ) service="koodikool"       ; server="meteor" ;;
-        po ) service="poll"              ; server="meteor" ;;
-        lu ) service="LunarDevs"         ; server="meteor" ;;
-        tick ) service="tickets"         ; server="meteor" ;;
-        koos ) service="kooselu"         ; server="meteor" ;;
-        lin ) service="myLinux"          ;;
-        java ) service="javaCheatsheet"  ; server="itcollege" ;;
-        javah ) service="javaHarjutused" ;;
-        javap ) service="javaProjektid"  ;;
-        gw ) service="GuaanaWeb"         ;;
-        ga ) service="GuaanaAdmin"       ;;
-    esac
-
-    getIP $server
-}
-
-getIP () {
-    case $1 in
-        meteor    ) ip="root@95.85.56.82" ;;
-        toitla    ) ip="root@178.62.220.180" ;;
-        ghost     ) ip="root@188.226.162.53" ;;
-        itcollege ) ip="krister@i200.itcollege.ee" ;;
-        spice     ) ip="root@178.62.100.238" ;;
-    esac
-}
-
-c () {
-    getService $1
-    name=$service
-    if  [[ $name == toitla* ]];
-    then
-        name="toitla"
-    fi
-    d=~/code/$name
-    if [ ! -d "$d" ]; then
-        clone
-    fi
-    cd $d
-    clear
-    pwd
-    git status
-}
-
-clone () {
-    echo "=== CLONING $service ==="
-    case $service in
-        ting )                   cd $HOME/code && git clone git@github.com:KristerV/ting.git;;
-        ghost )                  echo "Can't clone Ghost, stupid!" ;;
-        draka_quality_control )  cd $HOME/code && git clone git@github.com:KristerV/draka_quality_control.git ;;
-        toitladev | toitlalive ) cd $HOME/code && git clone git@github.com:KristerV/toitla.git ;;
-        krister )                cd $HOME/code && git clone git@github.com:KristerV/krister.git;;
-        chat )                   cd $HOME/code && git clone git@github.com:KristerV/chat-api-app.git;;
-        movieatmyplace )         cd $HOME/code && git clone git@github.com:KristerV/movieatmyplace.git;;
-        markdownsites )          cd $HOME/code && git clone git@github.com:KristerV/markdownsites.git;;
-        koodikool )              cd $HOME/code && git clone git@bitbucket.org:kriv/koodikool.git;;
-        poll )                   cd $HOME/code && git clone git@github.com:KristerV/poll.git;;
-        LunarDevs )              cd $HOME/code && git clone git@bitbucket.org:kriv/lunardevs.git;;
-        tickets )                cd $HOME/code && git clone git@github.com:KristerV/tickets.git;;
-        myLinux )                cd $HOME/code && git clone git@github.com:KristerV/myLinux.git;;
-        kooselu )                cd $HOME/code && git clone git@bitbucket.org:kriv/kooselu.git;;
-        javaCheatsheet )         cd $HOME/code && git clone git@github.com:KristerV/javaCheatsheet.git;;
-        javaHarjutused )         cd $HOME/code && git clone git@github.com:KristerV/javaHarjutused.git;;
-        javaProjektid )          cd $HOME/code && git clone git@github.com:KristerV/javaProjektid.git;;
-        GuaanaWeb )              cd $HOME/code && git clone git@github.com:Guaana/GuaanaWeb.git;;
-        GuaanaAdmin )              cd $HOME/code && git clone git@github.com:Guaana/GuaanaAdmin.git;;
-        * ) echo "git not set up for $service"
-    esac
-
-}
-
-# ssh
-ss () {
-    clear
-    getService $1
-    ssh -t $ip "cd /srv/ ; bash"
-}
-
-# update
-u () {
-    clear
-    getService $1
-    echo "=== UPDATING $service ==="
-    case $server in
-        meteor | itcollege ) ssh $ip "cd /srv/$service/ && git checkout . && git pull && cd /srv/deploy_$service/ && mup deploy";;
-        toitla ) ssh $ip "cd /srv/$service/ && git checkout . && git pull && cd /srv/deploy_$service/ && mupx deploy";;
-        ghost ) ssh $ip "sh /var/www/upgrade.sh";;
-        * ) echo "Service updating not configured" ;;
-    esac
-
-}
-
-# backup
-b () {
-    getService $1
-    echo "=== BACKUP $server ==="
-    mkdir -p mkdir $backup_dir/db_$server
-    case $server in
-        meteor ) ssh $ip "mongodump -o /srv/dump/$(date +%F)/";
-                mkdir $backup_dir/db_$server/$(date +%F);
-                scp -r $ip:/srv/dump/$(ssh $ip 'ls -t /srv/dump | head -1')/* $backup_dir/db_$server/$(date +%F);
-                ;;
-	toitla ) ssh $ip "docker exec mongodb mongodump -d toitlalive -o /var/backups/$(date +%F)/ && mkdir /srv/dump/$(date +%F) && docker cp /srv/dump/$(date +%F) mongodb:/var/backups/$(date +%F)/";
-                mkdir $backup_dir/db_$server/$(date +%F);
-                scp -r $ip:/srv/dump/$(ssh $ip 'ls -t /srv/dump | head -1')/* $backup_dir/db_$server/$(date +%F);
-                ;;
-        ghost ) mkdir $backup_dir/db_$server/$(date +%F);
-                scp $ip:/var/www/ghost/content/data/ghost.db $backup_dir/db_$server/$(date +%F);;
-        * ) echo "Service not updatable: $server"; exit 1 ;;
-    esac
-}
-
-# restore
-r () {
-    getService $1
-    echo "=== RESTORE $service ==="
-    case $service in
-        GuaanaWeb ) cd ~/code/GuaanaWeb/ && sh .devdump ;;
-        GuaanaAdmin ) cd ~/code/GuaanaAdmin/ && sh .devdump ;;
-        * ) mongorestore -h localhost --port 3001 --db meteor --drop $backup_dir/db_$server/$(ls -t $backup_dir/db_$server/ | head -1)/$service/ ;;
-    esac
-}
-
 # display options
 k () {
     echo "
-  Linux activities    Meteor commands     Services
-  ----------------    -----------------   -------------------
-  gen - general       c     - cd          ti     - ting
-  sc  - screencast    s     - ssh         gh     - ghost
-  bta - bld ttla andr u     - update      to     - toitla
-  ks  - screen guide  b     - backup      toa    - toitla-app
-                      r     - restore     todev  - toitladev
-                                          tolive - toitlalive
-                                          kr     - krister
-                                          mo     - movienight
-                                          ko     - koodikool
-                                          po     - poll
-                                          lu     - lunardevs
-                                          tick   - tickets
-                                          java   - javaCheatsheet
-                                          javah  - javaHarjutused
-                                          koos   - kooselu
-                                          lin    - myLinux
-                                          gw     - GuaanaWeb
-                                          ga     - GuaanaAdmin
+  Linux activities
+  ----------------
+  ks  - screen guide
+  sc  - screencast
 "
 }
 
@@ -202,27 +52,8 @@ m () {
     fi
 }
 
-gen () {
-    $dir/kuti_general
-}
-
 sc () {
     $dir/kuti_screencast.sh
-}
-
-bta () {
-    echo "============= Build Toitla App (for android) ============="
-    mkdir ~/build/ > /dev/null 2>&1
-    rm -rf ~/build/android
-    rm -rf ~/build/toitla-app.tar.gz
-    cd ~/code/toitla-app/
-    meteor build ~/build/ --server=app.toitla.com
-    cd ~/build/android
-    # keytool -genkey -alias your-app-name -keyalg RSA -keysize 2048 -validity 10000
-    jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 unaligned.apk Toitla
-    ~/.meteor/android_bundle/android-sdk/build-tools/20.0.0/zipalign 4 unaligned.apk production.apk
-    cp production.apk ~/code/toitla-app/public/toitla.apk
-    c toa
 }
 
 futurecommit () {
