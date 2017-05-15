@@ -29,9 +29,6 @@ echo " --------------------- remove PC speaker beep --------------------- "
 sudo rmmod pcspkr
 echo "blacklist pcspkr" > sudo /etc/modprobe.d/nobeep.conf
 
-# echo " --------------------- keep time up to date --------------------- "
-# timedatectl set-ntp true
-
 echo " --------------------- Kuti Scriptid --------------------- "
 echo "source ~/code/myLinux/cmd/kuti" >> ~/.bashrc
 
@@ -50,10 +47,12 @@ cd arch-packages/gromit-mpx-git/
 # needs manual confirm
 makepkg -sri
 # exists already and needs sudo
+rm /etc/gromit-mpx/gromit-mpx.cfg
 ln -s ~/code/myLinux/config/gromit-mpx.cfg /etc/gromit-mpx/gromit-mpx.cfg
 
-echo " --------------------- Meteor --------------------- "
-curl https://install.meteor.com/ | sh
+# echo " --------------------- Meteor --------------------- "
+# Don't want this anymore
+# curl https://install.meteor.com/ | sh
 
 echo " --------------------- Vim Distribution --------------------- "
 curl http://j.mp/spf13-vim3 -L -o - | sh
