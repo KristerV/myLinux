@@ -8,6 +8,12 @@ yaourt -S --noconfirm file-roller
 yaourt -S --noconfirm sublime-text-dev
 yaourt -S --noconfirm thefuck
 
+echo " --------------------- yaourt conf --------------------- "
+ln -s ~/code/myLinux/config/yaourtrc ~/.yaourtrc
+
+echo " --------------------- Kuti Scriptid --------------------- "
+echo "source ~/code/myLinux/cmd/kuti" >> ~/.bashrc
+
 echo " --------------------- keybindings (volume) --------------------- "
 
 # https://wiki.archlinux.org/index.php/PulseAudio#Keyboard_volume_control
@@ -30,15 +36,9 @@ echo " --------------------- remove PC speaker beep --------------------- "
 # requires sudo -i
 # sudo echo "blacklist pcspkr" > /etc/modprobe.d/nobeep.conf
 
-echo " --------------------- Kuti Scriptid --------------------- "
-echo "source ~/code/myLinux/cmd/kuti" >> ~/.bashrc
-
 echo " --------------------- screen setup --------------------- "
 yaourt -S --noconfirm screen
 ln -s ~/code/myLinux/config/screenrc ~/.screenrc
-
-echo " --------------------- yaourt conf --------------------- "
-ln -s ~/code/myLinux/config/yaourtrc ~/.yaourtrc
 
 echo " --------------------- install gromit --------------------- "
 yaourt -S --noconfirm xf86-input-wacom
@@ -56,6 +56,7 @@ ln -s ~/code/myLinux/config/gromit-mpx.cfg /etc/gromit-mpx/gromit-mpx.cfg
 # curl https://install.meteor.com/ | sh
 
 echo " --------------------- Vim Distribution --------------------- "
+# use empty github details
 curl http://j.mp/spf13-vim3 -L -o - | sh
 ln -s ~/code/myLinux/config/vimrc.local ~/.vimrc.local
 
