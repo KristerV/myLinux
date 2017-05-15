@@ -26,8 +26,9 @@ rm ~/.zshrc
 ln -s ~/code/myLinux/config/zshrc ~/.zshrc
 
 echo " --------------------- remove PC speaker beep --------------------- "
-sudo rmmod pcspkr
-echo "blacklist pcspkr" > sudo /etc/modprobe.d/nobeep.conf
+# sudo rmmod pcspkr
+# requires sudo -i
+# sudo echo "blacklist pcspkr" > /etc/modprobe.d/nobeep.conf
 
 echo " --------------------- Kuti Scriptid --------------------- "
 echo "source ~/code/myLinux/cmd/kuti" >> ~/.bashrc
