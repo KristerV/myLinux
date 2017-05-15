@@ -66,6 +66,7 @@ sudo cp ./20-thinkpad.conf /etc/X11/xorg.conf.d/
 
 echo " --------------------- Set time syncing on --------------------- "
 timedatectl set-ntp true
+timedatectl set-timezone Europe/Tallinn
 
 echo " --------------------- Conky --------------------- "
 yaourt -S --noconfirm conky-lua-archers
