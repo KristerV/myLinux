@@ -7,6 +7,8 @@ yaourt -S --noconfirm ffcast
 yaourt -S --noconfirm file-roller
 yaourt -S --noconfirm sublime-text-dev
 yaourt -S --noconfirm thefuck
+yaourt -S --noconfirm gimp
+yaourt -S --noconfirm inkscape
 
 echo " --------------------- yaourt conf --------------------- "
 ln -s ~/code/myLinux/config/yaourtrc ~/.yaourtrc
