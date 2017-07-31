@@ -32,7 +32,7 @@ TEXT
 ${font Antipasto:pixelsize=134}${alignc}${time %H:%M}${font}
 ${font Antipasto:pixelsize=45}${alignc}${time %a %d %B}${font}
 
-${font Antipasto:pixelsize=18}LAN ${upspeed enp0s25}           ${alignc}${upspeed ppp0}${alignr}${upspeed wlo1} WiFi
-${font Antipasto:pixelsize=18}LAN ${downspeed enp0s25}           ${alignc}${downspeed ppp0}${alignr}${downspeed wlo1} WiFi
+${font Antipasto:pixelsize=18}LAN ${upspeed enp0s25}           ${alignr}${upspeed wlp2s0} WiFi
+${font Antipasto:pixelsize=18}LAN ${downspeed enp0s25}           ${alignr}${downspeed wlp2s0} WiFi
 ${font Antipasto:pixelsize=12}CPU${alignc}      ${uptime_short} (${battery_time})${alignr}RAM
 ${cpugraph 30,149 }${alignr}${memgraph 30,149}

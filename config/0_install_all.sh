@@ -28,6 +28,10 @@ echo " --------------------- keybindings (volume) --------------------- "
 # ln -s ~/code/myLinux/config/xbindkeysrc ~/.xbindkeysrc
 # ln -s ~/code/myLinux/config/xprofile ~/.xprofile
 
+echo "--------------------- keybindings (terminal) ---------------------------"
+# clear and reset pane <Primary>k
+# $HOME/.config/xfce4/terminal/accels.scm
+
 echo " --------------------- oh-my-ZSH --------------------- "
 sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 rm ~/.zshrc

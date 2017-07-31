@@ -4,5 +4,6 @@
 dir=`dirname $0`
 alias ll="ls -lh"
 alias s="subl3 ."
+alias sshlab="/home/krister/code/internal-docs/Scripts/ssh_to_router.sh"
 source $dir/kuti
 ssh-add ~/.ssh/id_rsa &> /dev/null
