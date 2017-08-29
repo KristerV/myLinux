@@ -43,19 +43,6 @@ ks () {
 "
 }
 
-m () {
-    if [ -f .devrun ]; then
-        echo "[[ run .devrun ]]"
-        sh .devrun
-    else
-        /usr/local/bin/meteor run --settings settings.json
-    fi
-}
-
-sc () {
-    $dir/kuti_screencast.sh
-}
-
 futurecommit () {
     date=$(date -d "+$2 days" +%Y-%m-%dT%H:%M:%S%z)
     GIT_AUTHOR_DATE="$date" GIT_COMMITTER_DATE="$date" git commit -m "$1"
