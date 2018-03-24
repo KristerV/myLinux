@@ -47,3 +47,7 @@ futurecommit () {
     date=$(date -d "+$2 days" +%Y-%m-%dT%H:%M:%S%z)
     GIT_AUTHOR_DATE="$date" GIT_COMMITTER_DATE="$date" git commit -m "$1"
 }
+
+updateghost () {
+	ssh root@code.krister.ee "service ghost stop && cd /var/www/ && wget http://ghost.org/zip/ghost-latest.zip && rm -rf ghost/core && unzip -uo ghost*.zip -d ghost && chown -R ghost:ghost ghost/* && cd /var/www/ghost && npm install --production && service ghost start"
+}
