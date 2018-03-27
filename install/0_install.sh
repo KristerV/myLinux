@@ -18,7 +18,7 @@ yes | yaourt -S vlc popcorntime-bin
 
 echo " ------------------------------- bashrc -------------------------------- "
 echo "source ~/code/myLinux/bash/bashrc" >> ~/.bashrc
-sudo sed -i 's/reset-and-clear" "")/reset-and-clear" "<Primary>k")/' ~/.config/xfce4/terminal/accels.scm
+sudo sed -i 's/^;.*reset-and-clear" "")/\(gtk_accel_path "<Actions>\/terminal-window\/reset-and-clear" "<Primary>k"\)/' ~/.config/xfce4/terminal/accels.scm
 
 echo " ------------------------------ VIM conf ------------------------------- "
 curl http://j.mp/spf13-vim3 -L -o - | sh

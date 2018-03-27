@@ -1,10 +1,3 @@
-
-echo "--------------------- keybindings (terminal) ---------------------------"
-# clear and reset pane <Primary>k
-# $HOME/.config/xfce4/terminal/accels.scm
-
-
-
 echo " --------------------- remove PC speaker beep --------------------- "
 # sudo rmmod pcspkr
 # requires sudo -i
