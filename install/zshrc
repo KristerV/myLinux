@@ -84,4 +84,4 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 zstyle ':completion:*' special-dirs true
-source /home/krister/code/myLinux/cmd/bashrc
+source /home/krister/code/myLinux/bash/bashrc

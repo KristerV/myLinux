@@ -1,2 +1,0 @@
-startup_message off
-bind "^k" eval "clear" "scrollback 0" "scrollback 15000"

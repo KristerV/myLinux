@@ -1,0 +1,7 @@
+set nospell
+set mouse-=a
+set autoindent expandtab tabstop=4 shiftwidth=4
+set pastetoggle=<F4>
+set nonumber
+set nolist
+let g:indent_guides_enable_on_vim_startup = 0

@@ -1,10 +1,5 @@
 #!/bin/bash
-# source ~/code/myLinux/cmd/bashrc
-# dir=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd ) ## old
-dir=`dirname $0`
 alias ll="ls -lh"
-alias s="subl3 ."
-alias sshlab="/home/krister/code/internal-docs/Scripts/ssh_to_router.sh"
 git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
-source $dir/kuti
+source ~/code/myLinux/bash/kuti
 ssh-add ~/.ssh/id_rsa &> /dev/null
