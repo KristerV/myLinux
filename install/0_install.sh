@@ -13,7 +13,7 @@ yes | yaourt -S gimp inkscape
 yes | yaourt -S vivaldi firefox
 yes | yaourt -S docker docker-compose docker-machine nodejs
 yes | yaourt -S redshift albert baobab blueman
-yes | yaourt -S keybase
+yes | yaourt -S keybase-bin
 yes | yaourt -S vlc popcorntime-bin
 
 echo " ------------------------------- bashrc -------------------------------- "
