@@ -13,7 +13,7 @@ yes | yaourt -S gimp inkscape
 yes | yaourt -S vivaldi firefox
 yes | yaourt -S docker docker-compose docker-machine nodejs
 yes | yaourt -S redshift albert baobab blueman
-yes | yaourt -S keybase-bin
+yes | yaourt -S keybase-bin hugo
 yes | yaourt -S vlc popcorntime-bin
 
 echo " ------------------------------- bashrc -------------------------------- "
@@ -22,7 +22,7 @@ sudo sed -i 's/^;.*reset-and-clear" "")/\(gtk_accel_path "<Actions>\/terminal-wi
 
 echo " ------------------------------ VIM conf ------------------------------- "
 curl http://j.mp/spf13-vim3 -L -o - | sh
-ln -s ~/code/myLinux/install/vimrc.local ~/.vimrc.local
+ln -s ~/code/myLinux/install/vimrc.local ~/.vimrc.local # didn't link last time..
 
 echo " -------------------------------- Conky -------------------------------- "
 yes | yaourt -S conky-lua-archers
@@ -47,11 +47,18 @@ sudo ln -s -f ~/code/myLinux/install/gromit-mpx.cfg /usr/etc/gromit-mpx/gromit-m
 echo " --------------------------- ThinkPad stuff ---------------------------- "
 # Trackpoint conf
 echo SUBSYSTEM=="serio", DRIVERS=="psmouse", ACTION=="change", ENV{SERIO_TYPE}=="05", ATTR{press_to_select}="1", ATTR{sensitivity}="196", ATTR{speed}="255", ATTR{inertia}="4" | sudo tee /etc/udev/rules.d/10-trackpoint.rules
+
 # Middle button scroll
 sudo cp ~/code/myLinux/install/20-thinkpad.conf /etc/X11/xorg.conf.d/
+
 # Disable middle click (the pasting is driving me crazy)
 # If id is wrong xinput list | grep 'id='
 xinput set-button-map 11 1 0 3
+
+# Reactivate trackpad scroll after suspend
+sudo mkdir -p /etc/pm/config.d/
+sudo touch /etc/pm/config.d/01reload_mouse
+echo SUSPEND_MODULES="${SUSPEND_MODULES:+$SUSPEND_MODULES }psmouse" | sudo tee /etc/pm/config.d/01reload_mouse
 
 echo " --------------------------------- ZSH --------------------------------- "
 rm ~/.zshrc

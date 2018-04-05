@@ -3,3 +3,5 @@ alias ll="ls -lh"
 git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 source ~/code/myLinux/bash/kuti
 ssh-add ~/.ssh/id_rsa &> /dev/null
+xinput set-button-map 11 1 0 3 # Disable middle click (because of pasting)
+xinput set-button-map 12 1 0 3
