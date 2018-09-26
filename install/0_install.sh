@@ -60,6 +60,9 @@ sudo mkdir -p /etc/pm/config.d/
 sudo touch /etc/pm/config.d/01reload_mouse
 echo SUSPEND_MODULES="${SUSPEND_MODULES:+$SUSPEND_MODULES }psmouse" | sudo tee /etc/pm/config.d/01reload_mouse
 
+echo " -------------------------------- other -------------------------------- "
+yes | yaourt -S unified-remote-server
+
 echo " --------------------------------- ZSH --------------------------------- "
 rm ~/.zshrc
 ln -s ~/code/myLinux/install/zshrc ~/.zshrc
