@@ -30,6 +30,10 @@ rm /home/krister/.conkyrc
 ln -s code/myLinux/install/conkyrc ~/.conkyrc
 sudo cp ./Antipasto.otf /usr/share/fonts/
 
+echo " ------------------------------- Wmctrl -------------------------------- "
+# Conky uses this to keep itself on top of maximized windows
+yes | yaourt -S wmctrl
+
 echo " ------------------------------- ID Card ------------------------------- "
 gpg --recv-keys 378B845402277962
 yes | yaourt -S opensc-esteid ccid chrome-token-signing qdigidoc qesteidutil esteidfirefoxplugin
