@@ -31,6 +31,11 @@ function toggleConky {
 	fi
 }
 
+function toggleAlbert {
+    albert toggle
+    wmctrl -a "albert — Albert" # raise to top
+}
+
 function deleteAllDocker {
     printf "Connected to machine: "
     docker-machine active
