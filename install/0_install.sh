@@ -16,6 +16,11 @@ yes | yaourt -S redshift albert baobab blueman
 yes | yaourt -S keybase-bin hugo
 yes | yaourt -S vlc popcorntime-bin
 
+echo " ------------------------------- yay -------------------------------- "
+yes | yaourt -S yay
+yay -Syu --combinedupgrade --save
+echo "Color" >> ~/.bashrc
+
 echo " ------------------------------- bashrc -------------------------------- "
 echo "source ~/code/myLinux/bash/bashrc" >> ~/.bashrc
 sudo sed -i 's/^;.*reset-and-clear" "")/\(gtk_accel_path "<Actions>\/terminal-window\/reset-and-clear" "<Primary>k"\)/' ~/.config/xfce4/terminal/accels.scm
