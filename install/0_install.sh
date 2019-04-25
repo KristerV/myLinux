@@ -16,8 +16,12 @@ yay -Sy \
     conky-lua-archers \
     wmctrl zsh oh-my-zsh-git \
     gromit-mpx-git xf86-input-wacom \
-    qdigidoc4 \
+    qdigidoc4 ccid \
     mailspring
+
+echo " ===> ID KAART"
+sudo systemctl enable pcscd
+sudo systemctl start pcscd
 
 echo " ===> yay colors"
 # Make sure you have the Color option in your /etc/pacman.conf (see issue https://github.com/Jguer/yay/issues/123).
@@ -62,6 +66,10 @@ echo " ===> ThinkPad stuff"
 # sudo touch /etc/pm/config.d/01reload_mouse
 #echo SUSPEND_MODULES="${SUSPEND_MODULES:+$SUSPEND_MODULES }psmouse" | sudo tee /etc/pm/config.d/01reload_mouse
 
+echo " ===> TouchPad scroll after suspend"
+# sudo vim /etc/default/grub
+# GRUB_CMDLINE_LINUX_DEFAULT="quiet splash psmouse.synaptics_intertouch=0"
+
 echo " ===> Be free from screen tearing"
 echo "export XFWM4_USE_PRESENT=1" >> ~/.profile
 
@@ -87,3 +95,4 @@ echo " ===> Other manual stuff"
 #
 
 export XFWM4_USE_PRESENT=1
+
