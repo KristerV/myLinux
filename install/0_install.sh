@@ -80,6 +80,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 ## Custom config
 rm ~/.zshrc
 ln -s ~/code/myLinux/install/zshrc ~/.zshrc
+echo "source ~/code/myLinux/bash/bashrc" >> ~/.zshrc
 
 # This you may or may not want
 cat >> ~/.oh-my-zsh/themes/robbyrussell.zsh-theme <<"EOL"
