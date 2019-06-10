@@ -85,5 +85,3 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 zstyle ':completion:*' special-dirs true
 source /home/krister/code/myLinux/bash/bashrc
-source /usr/share/nvm/init-nvm.sh
-export PATH="$PATH:/home/krister/.dotnet/tools"

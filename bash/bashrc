@@ -1,8 +1,5 @@
 #!/bin/bash
-alias ll="ls -lh"
+alias ll="ls -lah"
 git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
-source ~/code/myLinux/bash/kuti
 ssh-add ~/.ssh/id_rsa &> /dev/null
-xinput | grep -E "TouchPad|TrackPoint" | awk -F'(\tid=)|\t' '{xinput set-button-map $2 1 0 3}' # Disable middle click (because of pasting)
-alias remote="/opt/urserver/urserver"
 alias deleteAllDocker="/home/krister/code/myLinux/bash/functions.sh deleteAllDocker"
