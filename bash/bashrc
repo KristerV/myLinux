@@ -2,4 +2,20 @@
 alias ll="ls -lah"
 git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 ssh-add ~/.ssh/id_rsa &> /dev/null
-alias deleteAllDocker="/home/krister/code/myLinux/bash/functions.sh deleteAllDocker"
+alias deleteAllDocker="/home/krister/code/myLinux/bash/deleteAllDocker.sh"
+alias intellij="idea . > /dev/null 2>&1 &!"
+alias web="export _JAVA_AWT_WM_NONREPARENTING=1 && webstorm . > /dev/null 2>&1 &!"
+alias tb="nc termbin.com 9999"
+alias gd="git diff -- . ':!package-lock.json'"
+
+
+# Open same dir in new terminal tab https://unix.stackexchange.com/questions/93476/gnome-terminal-keep-track-of-directory-in-new-tab
+. /etc/profile.d/vte.sh
+
+if ! pgrep -u "$USER" ssh-agent > /dev/null; then
+    ssh-agent > "$XDG_RUNTIME_DIR/ssh-agent.env"
+fi
+if [[ ! "$SSH_AUTH_SOCK" ]]; then
+    eval "$(<"$XDG_RUNTIME_DIR/ssh-agent.env")"
+fi
+

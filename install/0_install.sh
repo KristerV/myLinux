@@ -41,6 +41,23 @@ ln -s ~/code/myLinux/install/zshrc ~/.zshrc
 yay -S vim-surround vim-gitgutter vim-airline vim-repeat vim-supertab vim-auto-pairs vim-molokai
 ln -s ~/code/myLinux/install/vimrc ~/.vimrc
 
+## Keyboard shortcuts
+# To enable the Shift-Alt-< shortcut go to xfconf and manually change 'greater' key to 'less'
+
+yay -S ttf-ubuntu-font-family arc-gtk-theme xcursor-simpleandsoft paper-icon-theme
+
+## Suspend
+# You must enable Hibernation. Follow wiki.
+
+## If CPU has one process 99%
+# https://askubuntu.com/questions/176565/why-does-kworker-cpu-usage-get-so-high
+
+#######################################################
+##                 GNOME 3 specific                  ##
+
+# Using the Autohide Top Bar extension with Firefox causes bug, so enable wayland for FF
+echo "export MOZ_ENABLE_WAYLAND=1" > /etc/profile.d/wayland-fox.sh
+
 #######################################################
 ##              Didn't use last time                 ##
 

@@ -85,3 +85,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 zstyle ':completion:*' special-dirs true
 source /home/krister/code/myLinux/bash/bashrc
+
+. $HOME/.asdf/asdf.sh
+
+. $HOME/.asdf/completions/asdf.bash
